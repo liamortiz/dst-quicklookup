@@ -1,0 +1,221 @@
+/* Navigation colors/variables */
+$navigation-color : #F58220;
+$li-active-color : white;
+$post-heading-color : #003f5c;
+$post-bg-color: #141414;
+
+//FONTS
+@font-face {
+  font-family: 'ds-font';
+  src : url("./fonts/ds-font.woff");
+}
+
+.App {
+  background-image: url('./images/goat-background.jpg');
+}
+
+/*-------------------Main Wrapper----------*/
+#wrapper {
+  width: 90%;
+  max-width: 1500px;
+  min-width: 800px;
+  margin: auto;
+  padding-top: 5em;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#left-container {
+  flex: 2.5;
+  h1 {
+    margin: 1em auto;
+    font-size: 240%;
+    font-family: 'ds-font', sans-serif;
+    text-align: center;
+    padding: .5em 0 .5em 0;
+    border: 10px dotted black;
+    max-width: 500px;
+  }
+}
+#right-container {
+  flex: 1;
+  background-color: $post-bg-color;
+  box-shadow: -5px 0px 10px 1px #aaaaaa;
+}
+
+/*------------------NAV-----------------*/
+nav {
+  height: 80px;
+  background-color: $navigation-color;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  a {
+    text-decoration: none;
+    font-family: 'ds-font';
+    font-size: 150%;
+    color: white;
+    &:hover:not(.active) {
+      color: black;
+    }
+  }
+  #logo {
+    width: 120px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    margin-left: 1em;
+    a:hover{color: white;}
+  }
+  ul {
+    margin: 0;
+    margin-top: 1.8em;
+    display: inline-block;
+    font-size: 110%;
+    font-family: 'Helvetica';
+    li {
+      float: left;
+      list-style: none;
+      margin-left: 1.2em;
+      margin-right: 1.2em;
+      img {
+        margin-left: .3em;
+        transition: .2s transform;
+      }
+    }
+    .active{
+      border-bottom: 5px solid $li-active-color;
+      border-radius: 6px;
+    }
+  }
+  .search-container {
+    float: right;
+    margin-top: 1.6em;
+    margin-right: 2em;
+    display: flex;
+    justify-content: flex-end;
+    .search {
+      color: gray;
+      border-radius: 1px;
+      padding: .7em;
+      outline: none;
+      border: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .search-icon {
+    margin-left: .4em;
+  }
+}
+/*--------------Dropdown-----------------*/
+.dropdown-container {
+  background-color: $navigation-color;
+  max-width: 130px;
+  max-height: 0;
+  position: absolute;
+  overflow: hidden;
+  transition: max-height .8s;
+  margin: 0;
+  border-radius: 20px;
+  ul {
+    padding: 0;
+    margin: 0;
+    margin-top: .5em;
+    padding-top: .5em;
+    a {
+      display: block;
+      padding: .2em;
+      text-align: center;
+      margin: 0;
+      &:hover {
+        color: white;
+        background-color: $post-bg-color;
+      }
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+}
+/*--------------Post-----------------*/
+
+.post-wrapper {
+  max-width: 550px;
+  margin: auto;
+  .post-heading {
+    margin: auto;
+    padding: .4em;
+    text-align: left;
+    background-color: $post-heading-color;
+    color: white;
+    font-size: 200%;
+    font-family: 'ds-font', sans-serif;
+
+    max-width: 460px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    .release-date {
+      font-size: 75%;
+      float: right;
+      margin-right: .5em;
+      margin-top: .3em;
+    }
+  }
+  .post-image {
+    display: block;
+    max-width: 500px;
+    box-shadow: 5px 5px 5px #aaa;
+    margin: auto;
+  }
+  .post-info {
+    line-height: 1.8em;
+    font-family: 'Helvetica';
+    font-weight: lighter;
+    font-size: 90%;
+
+    margin: .4em auto;
+    margin-bottom: 4em;
+    background-color: $post-bg-color;
+    color: white;
+    border: 1px solid black;
+    display: flex;
+
+    h3 {text-align: center;}
+
+    .description {
+      flex: 1;
+      text-align: center;
+      padding-left: 1em;
+      p {
+        max-width: 90%;
+      }
+      background: white;
+      color: black;
+    }
+    .features {flex: 1;}
+  }
+}
+
+
+/*--------------Footer-----------------*/
+#footer {
+  height: 40px;
+  background-color: $navigation-color;
+  color: white;
+  text-align: center;
+  width: 100%;
+  line-height: 40px;
+  span {
+    font-size: 90%;
+    letter-spacing: .1px;
+  }
+}

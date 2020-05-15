@@ -1,0 +1,19 @@
+@media only screen and (max-width: 960px) {
+  .search-container {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .post-image {
+    display: inline-block;
+    padding-left: 2em;
+  }
+  #left-container .post-description {
+    float: right;
+    margin-right: 4em;
+    max-width: 300px;
+  }
+  .post-heading {
+    padding-left: 2em;
+  }
+}

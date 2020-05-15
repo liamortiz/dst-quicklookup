@@ -1,0 +1,49 @@
+[
+  {
+    "name" : "seashell",
+    "title" : "She Sells Sea Shells",
+    "release_date" : "April 23, 2020",
+    "href" : "",
+    "features" : [
+      "Messages in bottles",
+      "Moon fragment Island",
+      "The Crabby Hermit",
+      "The Crab King",
+      "New Seasonal Fish",
+      "Wobster and Wobster Den",
+      "New Winch Boat structure",
+      "Sunken Treasures",
+      "Singing shells",
+      "Clean Sweeper craftable"
+    ],
+    "description" : "Far out past the familiar shores of the mainland, something is waiting for our Survivors. What would you do for the thing you treasure most?"
+  },
+  {
+    "name" : "hamlet",
+    "title" : "Don't Starve: Hamlet",
+    "release_date" : "Nov 8, 2018",
+    "href" : "",
+    "features" : [
+      "Three new characters",
+      "Wilba Wormwood Wheeler",
+      "Delve into ancient ruins",
+      "Visit shops and trade with the pig society",
+      "Explore new lands",
+      "Craft and experiment with new items"
+    ],
+    "description" : "In Don’t Starve: Hamlet, Wilson discovers a lost town of aristocratic Pigmen nestled within a foreboding tropical jungle. Can you readjust to society as an outsider? Can you earn fame and riches recovering lost relics? Will you weather the Aporkalypse?"
+  },
+  {
+    "name" : "shipwrecked",
+    "title" : "Shipwrecked",
+    "release_date" : "Dec 1, 2015",
+    "href" : "",
+    "features" : [
+      "Navigate the Open Ocean",
+      "Explore an Entirely New World",
+      "New Seasons",
+      "Craft New Recipes"
+    ],
+    "description" : "In Don't Starve: Shipwrecked, Wilson finds himself stranded in a tropical archipelago. He must learn to survive all over again in this new environment filled with new biomes, seasons, and creatures."
+  }
+]
