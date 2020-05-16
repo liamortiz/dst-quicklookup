@@ -1,16 +1,6 @@
 import React from 'react';
 
-// WARNING: When adding new posts, the image for it must also be added and the IMAGE object needs to be directly changed.
-import seashells_hero from "../images/500px-shesells_promo.png";
-import shipwrecked_hero from "../images/500px-Shipwrecked_poster.png";
-import hamlet_hero from "../images/500px-hamlet.png";
-
-//WARNING: IMAGES keys must match the props.name value from the component below.
-const IMAGES = {
-  seashell:    seashells_hero,
-  shipwrecked: shipwrecked_hero,
-  hamlet:      hamlet_hero
-}
+const IMAGES = require.context("../images", true);
 
 // Functional component the post state wont be changing.
 function Post(props) {
@@ -20,7 +10,7 @@ function Post(props) {
 
         <a href = {props.href}>
           {/*Calls the IMAGE object with the name value to return its appropiate image.*/}
-          <img src = {IMAGES[props.name]} alt = {props.title} className = "post-image"/>
+          <img src = {IMAGES(props.image)} alt = {props.title} className = "post-image"/>
         </a>
 
         <div className = "post-info">

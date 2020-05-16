@@ -4,6 +4,7 @@
     "title" : "She Sells Sea Shells",
     "release_date" : "April 23, 2020",
     "href" : "",
+    "image" : "./500px-shesells_promo.png",
     "features" : [
       "Messages in bottles",
       "Moon fragment Island",
@@ -22,6 +23,7 @@
     "name" : "hamlet",
     "title" : "Don't Starve: Hamlet",
     "release_date" : "Nov 8, 2018",
+    "image" : "./500px-hamlet.png",
     "href" : "",
     "features" : [
       "Three new characters",
@@ -36,6 +38,7 @@
   {
     "name" : "shipwrecked",
     "title" : "Shipwrecked",
+    "image" : "./500px-Shipwrecked_poster.png",
     "release_date" : "Dec 1, 2015",
     "href" : "",
     "features" : [

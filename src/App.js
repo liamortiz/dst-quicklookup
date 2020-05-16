@@ -2,12 +2,12 @@ import React from 'react';
 import Navigation from './components/Navigation';
 import Post from './components/Post';
 
-//CSS Sheets
+// CSS Sheets
 import './App.scss';
 import './mobile.scss';
 
-//JSON
-import update_history from './data/dst_updates.json';
+// JSON
+import dst_updates from './data/updates.json';
 
 function App() {
   return (
@@ -17,15 +17,16 @@ function App() {
         <div id = "left-container">
           <h1>Don't Starve Updates</h1>
           {
-            // Load DST update history from json file
-            update_history.map((data, index) => {
+            // Load DST updates from json file
+            dst_updates.map((data, index) => {
               return (<Post key = {index}
-              title =        {data.title}
+              title =       {data.title}
               date =        {data.release_date}
               description = {data.description}
               href =        {data.href}
               name =        {data.name}
               features =    {data.features}
+              image =       {data.image}
               />)
             })
           }
