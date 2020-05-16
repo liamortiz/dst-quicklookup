@@ -50,7 +50,7 @@ class Navigation extends Component {
 
         <div className = "search-container">
           <input type = "text" value = {this.state.input_value} className = "search" onChange = {this.handleInput} onClick = {this.focusInput}/>
-          <img className = "search-icon" src = {search_bar} />
+          <img className = "search-icon" src = {search_bar} alt = "search" />
         </div>
       </nav>
     );

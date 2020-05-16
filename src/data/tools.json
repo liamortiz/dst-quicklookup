@@ -1,0 +1,17 @@
+[
+  {
+    "name" : "axe",
+    "require" : {"twigs" : 1, "flint" : 1},
+    "description" : "Chop down trees!"
+  },
+  {
+    "name" : "pickaxe",
+    "require" : {"twigs" : 2, "flint" : 2},
+    "description" : "Break down rocks."
+  },
+  {
+    "name" : "shovel",
+    "require" : {"twigs" : 2, "flint" : 2},
+    "description" : "Dig up all sorts of things."
+  }
+]

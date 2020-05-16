@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 // WARNING: When adding new posts, the image for it must also be added and the IMAGE object needs to be directly changed.
 import seashells_hero from "../images/500px-shesells_promo.png";
