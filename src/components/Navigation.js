@@ -21,7 +21,7 @@ const dropdown_items = {
     </ul>
   )
 }
-// Navigation and dropdown
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
