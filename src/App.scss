@@ -17,7 +17,7 @@ $post-bg-color: #141414;
 /*-------------------Main Wrapper----------*/
 #wrapper {
   width: 90%;
-  max-width: 1500px;
+  max-width: 1000px; // This width will change when finished.
   min-width: 800px;
   margin: auto;
   padding-top: 5em;
@@ -38,12 +38,6 @@ $post-bg-color: #141414;
     max-width: 500px;
   }
 }
-#right-container {
-  flex: 1;
-  background-color: $post-bg-color;
-  box-shadow: -5px 0px 10px 1px #aaaaaa;
-}
-
 /*------------------NAV-----------------*/
 nav {
   height: 80px;
@@ -202,6 +196,62 @@ nav {
       color: black;
     }
     .features {flex: 1;}
+  }
+}
+/*--------------Craft Preview-----------------*/
+#right-container {
+  flex: 1;
+  background-color: $post-bg-color;
+  box-shadow: -5px 0px 10px 1px #aaaaaa;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  h2  {
+    color: white;
+    text-align: center;
+  }
+  .tools-section {
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid gray;
+  }
+  .craft-container {
+    background: $navigation-color;
+    height: 40px;
+    padding: .5em;
+    margin: .2em 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .parent-image {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-right: 1em;
+      background-image: url("./images/hud01.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .require-image {
+      color: white;
+      width: 35px;
+      height: 35px;
+      float: left;
+      font-weight: bold;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin: .3em;
+      span {
+        font-size: 90%;
+        text-shadow: 2px 2px 2px black;
+
+      }
+    }
   }
 }
 

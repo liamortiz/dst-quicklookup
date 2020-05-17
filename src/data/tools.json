@@ -13,5 +13,15 @@
     "name" : "shovel",
     "require" : {"twigs" : 2, "flint" : 2},
     "description" : "Dig up all sorts of things."
+  },
+  {
+    "name" : "saddle",
+    "require" : {"beefalo_wool" : 4, "gold" : 4, "pig_skin" : 4},
+    "description" : "Lets you sit on animals. In theory."
+  },
+  {
+    "name" : "feather_pencil",
+    "require" : {"charcoal" : 1, "jet_feather" : 1, "twigs" : 1},
+    "description" : "Yes, the feather IS necessary."
   }
 ]
