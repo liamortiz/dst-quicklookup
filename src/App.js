@@ -10,17 +10,18 @@ import './mobile.scss';
 // JSON
 import update_json_file from './data/updates.json';
 import tools_json_file from './data/tools.json';
+import fight_json_file from './data/fight.json';
 
-// Returns an array of objects from the tools data randomly non-repeated values
-function loadPopularTools() {
-  let tools = []
-  let indexes = [...Array(tools_json_file.length).keys()]
+// Returns an array of objects from the passed data randomly, non-repeated values
+function getPopularItems(data, number=5) {
+  let popular_items = []
+  let indexes = [...Array(data.length).keys()]
 
-  for(let i = 0; i < 5; i++) {
+  for(let i = 0; i < number; i++) {
     let index = Math.floor(Math.random() * indexes.length)
-    tools.push(tools_json_file[indexes.splice(index, 1)]) // Remove that index to avoid repetition
+    popular_items.push(data[indexes.splice(index, 1)]) // Remove that index to avoid repetition
   }
-  return tools
+  return popular_items
 }
 
 function App() {
@@ -49,8 +50,18 @@ function App() {
           <h2>Popular Crafting Sets</h2>
           <div className = "tools-section">
             {
-            loadPopularTools().map((item, index) => {
-              return (<CraftPreview key = {index} category = "tools" name = {item.name} require = {item.require} description = {item.description} />)})
+            getPopularItems(tools_json_file).map((item, index) => {
+              return (
+                <CraftPreview key = {index} category = "tools" name = {item.name} require = {item.require} description = {item.description} />
+              )})
+            }
+          </div>
+          <div className = "fight-section">
+            {
+            getPopularItems(fight_json_file, 3).map((item, index) => {
+              return (
+                <CraftPreview key = {index} category = "fight" name = {item.name} require = {item.require} description = {item.description} />
+              )})
             }
           </div>
         </div>

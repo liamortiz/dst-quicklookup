@@ -17,7 +17,7 @@ $post-bg-color: #141414;
 /*-------------------Main Wrapper----------*/
 #wrapper {
   width: 90%;
-  max-width: 1000px; // This width will change when finished.
+  max-width: 1200px; // This width will change when finished.
   min-width: 800px;
   margin: auto;
   padding-top: 5em;
@@ -112,7 +112,7 @@ nav {
   max-height: 0;
   position: absolute;
   overflow: hidden;
-  transition: max-height .8s;
+  transition: max-height .5s;
   margin: 0;
   border-radius: 20px;
   ul {
@@ -165,9 +165,10 @@ nav {
   }
   .post-image {
     display: block;
+    margin: auto;
+    padding: 0;
     max-width: 500px;
     box-shadow: 5px 5px 5px #aaa;
-    margin: 0 auto;
   }
   .post-info {
     line-height: 1.8em;
@@ -209,10 +210,12 @@ nav {
     color: white;
     text-align: center;
   }
-  .tools-section {
+  .tools-section, .fight-section{
     max-width: 300px;
     margin: auto;
-    border: 1px solid gray;
+  }
+  .fight-section {
+    margin-top: 2em;
   }
   .craft-container {
     background: $navigation-color;
@@ -227,8 +230,8 @@ nav {
     }
 
     .parent-image {
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       float: left;
       margin-right: 1em;
       background-image: url("./images/hud01.png");
@@ -237,8 +240,8 @@ nav {
     }
     .require-image {
       color: white;
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       float: left;
       font-weight: bold;
       background-repeat: no-repeat;

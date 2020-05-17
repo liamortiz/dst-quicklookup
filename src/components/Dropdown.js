@@ -6,6 +6,7 @@ class Dropdown extends Component {
     // Show the dropdown menu
     let dropdown_element = document.getElementById(this.props.id);
     dropdown_element.style.maxHeight = "500px";
+    dropdown_element.style.border = "1px solid white";
 
     // Start the dropdown image animation
     let image_element = document.getElementById(`img-${this.props.id}`);
@@ -15,6 +16,7 @@ class Dropdown extends Component {
     // Hide the dropdown menu
     let dropdown_element = document.getElementById(this.props.id);
     dropdown_element.style.maxHeight = "0";
+    dropdown_element.style.border = "0";
 
     // Reset the dropdown image animation
     let image_element = document.getElementById(`img-${this.props.id}`);
