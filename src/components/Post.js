@@ -5,7 +5,6 @@ function Post(props) {
   return (
       <div className = "post-wrapper">
         <h2 className = "post-heading">{props.title}<span className = "release-date">{props.date}</span></h2>
-
         <a href = {props.href} title = "Visit Klei Website">
           {/*Calls the IMAGE object with the name value to return its appropiate image.*/}
           <img src = {IMAGES(props.image)} alt = {props.title} className = "post-image"/>

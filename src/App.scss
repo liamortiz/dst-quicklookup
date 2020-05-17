@@ -145,15 +145,14 @@ nav {
   max-width: 550px;
   margin: auto;
   .post-heading {
-    margin: auto;
     padding: .4em;
+    margin: 0 auto;
+    max-width: 450px;
     text-align: left;
     background-color: $post-heading-color;
     color: white;
     font-size: 200%;
     font-family: 'ds-font', sans-serif;
-
-    max-width: 460px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -168,7 +167,7 @@ nav {
     display: block;
     max-width: 500px;
     box-shadow: 5px 5px 5px #aaa;
-    margin: auto;
+    margin: 0 auto;
   }
   .post-info {
     line-height: 1.8em;

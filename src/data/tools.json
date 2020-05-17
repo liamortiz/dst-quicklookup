@@ -23,5 +23,10 @@
     "name" : "feather_pencil",
     "require" : {"charcoal" : 1, "jet_feather" : 1, "twigs" : 1},
     "description" : "Yes, the feather IS necessary."
+  },
+  {
+    "name" : "hammer",
+    "require" : {"twigs" : 3, "rocks" : 3, "rope" : 2},
+    "description" : "Smashes all kinds of things."
   }
 ]
