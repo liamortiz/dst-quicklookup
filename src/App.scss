@@ -17,7 +17,7 @@ $post-bg-color: #141414;
 /*-------------------Main Wrapper----------*/
 #wrapper {
   width: 90%;
-  max-width: 1200px; // This width will change when finished.
+  max-width: 1600px;
   min-width: 800px;
   margin: auto;
   padding-top: 5em;
@@ -34,7 +34,6 @@ $post-bg-color: #141414;
     font-family: 'ds-font', sans-serif;
     text-align: center;
     padding: .5em 0 .5em 0;
-    border: 10px dotted black;
     max-width: 500px;
   }
 }
@@ -141,9 +140,36 @@ nav {
 
 }
 /*--------------Post-----------------*/
-
+.post-nav {
+  margin-top: 3em;
+  margin-bottom: 8em;
+  #post-active {
+    background-color: $navigation-color;
+    opacity: 0.6;
+  }
+  ul {
+    max-width: 100px;
+    margin:auto;
+    li {
+      color: white;
+      list-style: none;
+      float: left;
+      margin-left: .2em;
+      margin-right: .2em;
+      background: $post-bg-color;
+      padding: .2em;
+      border-radius: 5px;
+      &:hover:not(#post-active){
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}
 .post-wrapper {
-  max-width: 550px;
+  max-width: 1200px;
+  padding-left: 1em;
+  padding-right: 1em;
   margin: auto;
   .post-heading {
     padding: .4em;
@@ -172,6 +198,8 @@ nav {
     box-shadow: 5px 5px 5px #aaa;
   }
   .post-info {
+    max-width: 600px;
+    min-height: 280px;
     line-height: 1.8em;
     font-family: 'Helvetica';
     font-weight: lighter;
@@ -179,7 +207,7 @@ nav {
 
     margin: .4em auto;
     margin-bottom: 4em;
-    background-color: $post-bg-color;
+    background-color: $post-heading-color;
     color: white;
     border: 1px solid black;
     display: flex;
@@ -202,6 +230,7 @@ nav {
 /*--------------Craft Preview-----------------*/
 #right-container {
   flex: 1;
+  max-width: 400px;
   background-color: $post-bg-color;
   box-shadow: -5px 0px 10px 1px #aaaaaa;
   padding-left: 1em;
@@ -217,7 +246,7 @@ nav {
     font-family: 'ds-font', sans-serif;
     font-size: 200%;
   }
-  .tools-section, .fight-section, .tab-section{
+  .tools-section, .fight-section, #tab-section{
     max-width: 300px;
     margin: auto;
     h3 {
@@ -226,13 +255,19 @@ nav {
     }
   }
   .fight-section {
-    margin-top: 2em;
+    margin-top: 4em;
   }
-  .tab-section {
-    margin-top: 2em;
+  #tab-section {
+    margin-top: 7em;
+    height: 250px;
+    max-width: 200px;
+
+    #tabs-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .tab-container {
-      border: 1px solid white;
-      height: 250px;
+      flex: 1;
     }
   }
   .craft-container {

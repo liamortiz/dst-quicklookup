@@ -34,5 +34,33 @@
       "Craft and experiment with new items"
     ],
     "description" : "In Don’t Starve: Hamlet, Wilson discovers a lost town of aristocratic Pigmen nestled within a foreboding tropical jungle. Can you readjust to society as an outsider? Can you earn fame and riches recovering lost relics? Will you weather the Aporkalypse?"
-  }
+  },
+  {
+    "name" : "shipwrecked",
+    "title" : "Shipwrecked",
+    "image" : "./500px-Shipwrecked_poster.png",
+    "release_date" : "Dec 1, 2015",
+    "href" : "",
+    "features" : [
+      "Navigate the Open Ocean",
+      "Explore an Entirely New World",
+      "New Seasons",
+      "Craft New Recipes"
+    ],
+    "description" : "In Don't Starve: Shipwrecked, Wilson finds himself stranded in a tropical archipelago. He must learn to survive all over again in this new environment filled with new biomes, seasons, and creatures."
+  },
+  {
+    "name" : "regin_of_giants",
+    "title" : "Reign of Giants",
+    "image" : "./500px-reign_of_giants.jpg",
+    "release_date" : "Apr 30, 2014",
+    "href" : "",
+    "features" : [
+      "New playable characters",
+      "Year-round starvation",
+      "A bigger, badder world",
+      "An extra save slot",
+      "Giants"
+    ],
+    "description" : "Don’t Starve: Reign of Giants is an expansion pack that adds new characters, seasons, creatures, biomes, and other challenges to Don’t Starve."}
 ]

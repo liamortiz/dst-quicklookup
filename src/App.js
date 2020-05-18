@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from './components/Navigation';
 import PostMaster from './components/PostMaster';
 import CraftMaster from './components/CraftMaster';
+import TabsPreview from './components/TabsPreview';
 
 // CSS Sheets
 import './App.scss';
@@ -24,11 +25,9 @@ function App() {
         <div id = "right-container">
           <h2>Popular Items</h2>
           {<CraftMaster />}
-          <div className = "tab-section">
+          <div id = "tab-section">
             <h3>Quick Search</h3>
-            <div className = "tab-container">
-
-            </div>
+            <TabsPreview />
           </div>
         </div>
       </div>
