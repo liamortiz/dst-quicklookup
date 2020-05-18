@@ -47,22 +47,30 @@ function App() {
           }
         </div>
         <div id = "right-container">
-          <h2>Popular Crafting Sets</h2>
+          <h2>Popular Items</h2>
           <div className = "tools-section">
+            <h3>Tools</h3>
             {
-            getPopularItems(tools_json_file).map((item, index) => {
+            getPopularItems(tools_json_file, 3).map((item, index) => {
               return (
                 <CraftPreview key = {index} category = "tools" name = {item.name} require = {item.require} description = {item.description} />
               )})
             }
           </div>
           <div className = "fight-section">
+            <h3>Fight Tab</h3>
             {
             getPopularItems(fight_json_file, 3).map((item, index) => {
               return (
                 <CraftPreview key = {index} category = "fight" name = {item.name} require = {item.require} description = {item.description} />
               )})
             }
+          </div>
+          <div className = "tab-section">
+            <h3>Quick Search</h3>
+            <div className = "tab-container">
+              
+            </div>
           </div>
         </div>
       </div>

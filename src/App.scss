@@ -208,18 +208,36 @@ nav {
 
   h2  {
     color: white;
+    background-color: $post-heading-color;
     text-align: center;
+    padding: .4em;
+    border-radius: 5px;
+    border: 1px dashed white;
+    font-family: 'ds-font', sans-serif;
+    font-size: 200%;
   }
-  .tools-section, .fight-section{
+  .tools-section, .fight-section, .tab-section{
     max-width: 300px;
     margin: auto;
+    h3 {
+      color: white;
+      text-align: center;
+    }
   }
   .fight-section {
     margin-top: 2em;
   }
+  .tab-section {
+    margin-top: 2em;
+    .tab-container {
+      border: 1px solid white;
+      height: 250px;
+    }
+  }
   .craft-container {
     background: $navigation-color;
     height: 40px;
+    min-width: 210px;
     padding: .5em;
     margin: .2em 0;
     &:first-child {

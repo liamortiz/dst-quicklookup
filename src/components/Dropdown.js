@@ -2,27 +2,26 @@ import React, {Component} from 'react';
 import arrowdown from '../images/arrowdown.png';
 
 class Dropdown extends Component {
+  componentDidMount() {
+    this.dropdown_element = document.getElementById(this.props.id);
+    this.arrow = document.getElementById(`img-${this.props.id}`);
+  }
   handleHoverEnter = () => {
     // Show the dropdown menu
-    let dropdown_element = document.getElementById(this.props.id);
-    dropdown_element.style.maxHeight = "500px";
-    dropdown_element.style.border = "1px solid white";
+    this.dropdown_element.style.maxHeight = "500px";
+    this.dropdown_element.style.border = "1px solid white";
 
-    // Start the dropdown image animation
-    let image_element = document.getElementById(`img-${this.props.id}`);
-    image_element.style.transform = "rotate(180deg)";
+    // Start the arrow animation
+    this.arrow.style.transform = "rotate(180deg)";
   }
   handleHoverLeave = () => {
     // Hide the dropdown menu
-    let dropdown_element = document.getElementById(this.props.id);
-    dropdown_element.style.maxHeight = "0";
-    dropdown_element.style.border = "0";
+    this.dropdown_element.style.maxHeight = "0";
+    this.dropdown_element.style.border = "0";
 
-    // Reset the dropdown image animation
-    let image_element = document.getElementById(`img-${this.props.id}`);
-    image_element.style.transform = "";
+    // Reset the arrow image animation
+    this.arrow.style.transform = "";
   }
-
   render() {
     return (
       <React.Fragment>
