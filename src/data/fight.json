@@ -2,26 +2,31 @@
   {
     "name" : "spear",
     "require" : {"twigs" : 2, "flint" : 1, "rope" : 1},
-    "description" : "Use the pointy end."
+    "description" : "Use the pointy end.",
+    "category" : "fight"
   },
   {
     "name" : "ham_bat",
     "require" : {"pig_skin" : 1, "twigs" : 2, "meat" : 2},
-    "description" : "It takes food to make food."
+    "description" : "It takes food to make food.",
+    "category" : "fight"
   },
   {
     "name" : "boomerang",
     "require" : {"boards" : 1, "silk" : 1, "charcoal" : 1},
-    "description" : "It comes from a land down under."
+    "description" : "It comes from a land down under.",
+    "category" : "fight"
   },
   {
     "name" : "tooth_trap",
     "require" : {"log" : 1, "rope" : 1, "hounds_tooth" : 1},
-    "description" : "Pops up and bites whoever steps on it."
+    "description" : "Pops up and bites whoever steps on it.",
+    "category" : "fight"
   },
   {
     "name" : "sleep_dart",
     "require" : {"jet_feather" : 1, "stinger" : 1, "cut_reeds" : 2},
-    "description" : "Spit sleepiness at your enemies."
+    "description" : "Spit sleepiness at your enemies.",
+    "category" : "fight"
   }
 ]

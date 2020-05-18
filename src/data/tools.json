@@ -2,31 +2,37 @@
   {
     "name" : "axe",
     "require" : {"twigs" : 1, "flint" : 1},
-    "description" : "Chop down trees!"
+    "description" : "Chop down trees!",
+    "category" : "tools"
   },
   {
     "name" : "pickaxe",
     "require" : {"twigs" : 2, "flint" : 2},
-    "description" : "Break down rocks."
+    "description" : "Break down rocks.",
+    "category" : "tools"
   },
   {
     "name" : "shovel",
     "require" : {"twigs" : 2, "flint" : 2},
-    "description" : "Dig up all sorts of things."
+    "description" : "Dig up all sorts of things.",
+    "category" : "tools"
   },
   {
     "name" : "saddle",
     "require" : {"beefalo_wool" : 4, "gold" : 4, "pig_skin" : 4},
-    "description" : "Lets you sit on animals. In theory."
+    "description" : "Lets you sit on animals. In theory.",
+    "category" : "tools"
   },
   {
     "name" : "feather_pencil",
     "require" : {"charcoal" : 1, "jet_feather" : 1, "twigs" : 1},
-    "description" : "Yes, the feather IS necessary."
+    "description" : "Yes, the feather IS necessary.",
+    "category" : "tools"
   },
   {
     "name" : "hammer",
     "require" : {"twigs" : 3, "rocks" : 3, "rope" : 2},
-    "description" : "Smashes all kinds of things."
+    "description" : "Smashes all kinds of things.",
+    "category" : "tools"
   }
 ]

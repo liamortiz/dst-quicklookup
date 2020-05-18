@@ -9,8 +9,13 @@ function CraftPreview(props) {
 
     for (const [name, amount] of Object.entries(props.require)) {
       items.push(
-        <div key = {name} className = "require-image" style = {{backgroundImage : `url(${IMAGES(`./${name}.png`)})`}}>
+        <div
+        key = {name}
+        className = "require-image"
+        style = {{backgroundImage : `url(${IMAGES(`./${name}.png`)})`}}>
+
           <span>{`x${amount}`}</span>
+
         </div>
       )
     }
@@ -18,8 +23,13 @@ function CraftPreview(props) {
   }
   return (
     <div className = "craft-container">
-      <img src = {IMAGES(`./${props.category}/${props.name}.png`)} alt = {`${props.name}`} title = {`${props.name}`} className = "parent-image" />
+      <img src = {IMAGES(`./${props.category}/${props.name}.png`)}
+      alt = {`${props.name}`}
+      title = {`${props.name}`}
+      className = "parent-image" />
+
       {loadItems()}
+
     </div>
   );
 }
