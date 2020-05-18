@@ -29,5 +29,5 @@
   <li>Hamlet</li>
 </ul>
 
-<p>The website is currently not being hosted.</p>
+<p>:point_right: The website is currently not being hosted</p>
 <img src="https://i.ibb.co/q5j1X4y/Capture.png" alt="Capture" border="0">
