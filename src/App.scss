@@ -14,7 +14,7 @@ $post-bg-color: #141414;
   background-image: url('./images/goat-background.jpg');
 }
 
-/*-------------------Main Wrapper----------*/
+/*-------------------Home Page----------*/
 #wrapper {
   width: 90%;
   max-width: 1600px;
@@ -79,7 +79,7 @@ nav {
         transition: .2s transform;
       }
     }
-    .active{
+    #active{
       border-bottom: 5px solid $li-active-color;
       border-radius: 6px;
     }
@@ -310,12 +310,75 @@ nav {
     }
   }
 }
+/*-------------------Character Page----------*/
+#character-wrapper {
+  width: 100%;
+  h2 {
+    text-align: center;
+    font-family: 'ds-font', sans-serif;
+    font-size: 300%;
+  }
+}
+#character-cards {
+  padding: 1em;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 900px;
+
+  .character-container {
+    display: inline-block;
+    box-shadow: 10px 0 10px #eee;
+    margin: .5em;
+    max-width: 250px;
+    img {
+      width: 100%;
+      height: 340px;
+    }
+    .character-stats {
+      background-color: $navigation-color;
+      height: 50px;
+      display: flex;
+      padding: .3em 0 .3em 0;
+      justify-content: center;
+      span {
+        width: 60px;
+        height: auto;
+        margin-left: .2em;
+        margin-right: .2em;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 50px;
+        text-shadow: 2px 1px black;
+      }
+      .health {background-image: url("./images/item_icons/huds/health_meter.png");}
+      .hunger {background-image: url("./images/item_icons/huds/hunger_meter.png");}
+      .sanity {background-image: url("./images/item_icons/huds/sanity_meter.png");}
+    }
+    .perk-description {
+      min-height: 120px;
+      padding: .5em;
+      color: white;
+      background-color: $post-heading-color;
+      h4 {
+        margin: .1em;
+        text-align: center;
+      }
+    }
+  }
+}
+
 
 
 /*--------------Footer-----------------*/
-#footer {
+footer {
   height: 40px;
-  background-color: $navigation-color;
+  background-color: $post-bg-color;
   color: white;
   text-align: center;
   width: 100%;

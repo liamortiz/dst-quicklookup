@@ -1,0 +1,44 @@
+[
+  {
+    "name" : "wilson",
+    "health" : 150,
+    "hunger" : 150,
+    "sanity" : 200,
+    "perks" : ["No perks"]
+  },
+  {
+    "name" : "wolfgang",
+    "health" : 300,
+    "hunger" : 300,
+    "sanity" : 200,
+    "perks" : ["Gets stronger with full belly", "Is afraid of the dark and monsters"]
+  },
+  {
+    "name" : "willow",
+    "health" : 150,
+    "hunger" : 150,
+    "sanity" : 120,
+    "perks" : ["Immune to fire damage", "Has a sweet lighter", "Lights fires when nervous"]
+  },
+  {
+    "name" : "wendy",
+    "health" : 150,
+    "hunger" : 150,
+    "sanity" : 200,
+    "perks" : ["Haunted by her twin sister", "Comfortable with darkness", "Doesn't hit very hard"]
+  },
+  {
+    "name" : "WX-78",
+    "health" : 400,
+    "hunger" : 200,
+    "sanity" : 300,
+    "perks" : ["Not a picky eater", "Charged by lightning", "Damaged by water", "Can upgrade with gears"]
+  },
+  {
+    "name" : "wickerbottom",
+    "health" : 150,
+    "hunger" : 150,
+    "sanity" : 250,
+    "perks" : ["Knows many things", "Self publishes books", "Can't sleep", "Hates spoiled foods"]
+  }
+]
