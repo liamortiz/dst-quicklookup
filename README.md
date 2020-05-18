@@ -1,6 +1,6 @@
 ## Don't Starve Recipe Look Up
 <p>
-  This is meant to be a Don't Starve and Don't Starve Together quick lookup tool. Is a work in progress, the goal is to make looking up craft recipes quick and easy and to show game update history.
+  This is meant to be a Don't Starve and Don't Starve Together quick lookup tool. Is a <b>work in progress</b>, the goal is to make looking up craft recipes quick and easy and to show game update history.
 <p>
 
 <h3>Tools</h3>
