@@ -14,9 +14,9 @@
 
 <h3>Features</h3>
 <ul>
-  <li>Character Cards: Displays in-game character stats.</li>
-  <li>Food Recipes: Shows food recipes instructions and stats towards characters.</li>
-  <li>Quick Search: Allows users to search by item name with real time results.</li>
+  <li><b>Character Cards</b>: Displays in-game character stats.</li>
+  <li><b>Food Recipes</b>: Shows food recipes instructions and stats towards characters.</li>
+  <li><b>Quick Search</b>: Allows users to search by item name with real time results.</li>
 </ul>
 
 <h3>Future Compatibility</h3>
