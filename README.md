@@ -10,5 +10,5 @@
   <li>AdobeXD</li>
 </ul>
 
-<p>The website is not currently being hosted.</p>
-<img src = "https://i.ibb.co/JqwZQDr/sample.png" alt = "sample image">
+<p>The website is currently not being hosted.</p>
+<img src="https://i.ibb.co/q5j1X4y/Capture.png" alt="Capture" border="0">
