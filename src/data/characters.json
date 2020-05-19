@@ -4,7 +4,7 @@
     "health" : 150,
     "hunger" : 150,
     "sanity" : 200,
-    "perks" : ["No perks"]
+    "perks" : ["Well rounded character"]
   },
   {
     "name" : "wolfgang",

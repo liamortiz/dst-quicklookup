@@ -1,26 +1,7 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
 import Dropdown from './Dropdown';
-
-//UI Icons
 import search_bar from '../images/search.png';
-
-const dropdown_items = {
-  mobs : (
-    <ul>
-      <li><a href = "index.html">Enemies</a></li>
-      <li><a href = "index.html">Pets</a></li>
-      <li><a href = "index.html">Friendly</a></li>
-    </ul>
-  ),
-  crafting : (
-    <ul>
-      <li><a href = "index.html">Weapons</a></li>
-      <li><a href = "index.html">Armor</a></li>
-      <li><a href = "index.html">Structures</a></li>
-      <li><a href = "index.html">Magic</a></li>
-    </ul>
-  )
-}
 
 class Navigation extends Component {
   constructor(props) {
@@ -38,14 +19,35 @@ class Navigation extends Component {
     return (
       <nav>
         <div id = "logo">
-          <h1><a href ="index.html">DSTLookup</a></h1>
+          <h1><a href ="/">DSTLookup</a></h1>
         </div>
         <ul>
-          <li><a href = "/" id = "active">Home</a></li>
-          <li><a href = "characters">Characters</a></li>
-          <Dropdown id = "Mobs" items = {dropdown_items["mobs"]} />
-          <li><a href = "index.html">Recipes</a></li>
-          <Dropdown id = "Crafting" items = {dropdown_items["crafting"]} />
+          <li><NavLink exact = {true} activeClassName = "active" to = "/">Home</NavLink></li>
+          <li><NavLink activeClassName = "active" to = "characters">Characters</NavLink></li>
+
+          <Dropdown id = "Recipes"
+            items = {
+              <ul>
+                <li><a href = "index.html">All</a></li>
+                <li><a href = "index.html">Don't Starve</a></li>
+                <li><a href = "index.html">DST</a></li>
+                <li><a href = "index.html">Shipwrecked</a></li>
+                <li><a href = "index.html">Hamlet</a></li>
+              </ul>
+            }
+            />
+          <Dropdown id = "Crafting"
+            items = {
+              <ul>
+                <li><a href = "index.html">Tools</a></li>
+                <li><a href = "index.html">Light</a></li>
+                <li><a href = "index.html">Survival</a></li>
+                <li><a href = "index.html">Food</a></li>
+                <li><a href = "index.html">Science</a></li>
+                <li><a href = "index.html">Fight</a></li>
+              </ul>
+            }
+            />
         </ul>
 
         <div className = "search-container">

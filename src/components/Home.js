@@ -2,6 +2,7 @@ import React from 'react';
 import PostMaster from './PostMaster';
 import CraftMaster from './CraftMaster';
 import TabsPreview from './TabsPreview';
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <div id = "left-container">
         <h1>Don't Starve Updates</h1>
         <PostMaster />
+        <Footer />
       </div>
 
       {/*Right panel tool previews crafts*/}

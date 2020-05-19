@@ -11,7 +11,6 @@ function CharacterCard(props) {
         <span className = "sanity">{props.sanity}</span>
       </div>
       <div className = "perk-description">
-        <h4>Perks</h4>
         <ul>
         {
           props.perks.map((perk, index) => {
