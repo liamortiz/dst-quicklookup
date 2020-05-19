@@ -40,5 +40,27 @@
     "hunger" : 150,
     "sanity" : 250,
     "perks" : ["Knows many things", "Self publishes books", "Can't sleep", "Hates spoiled foods"]
+  },
+  {
+    "name" : "woodie",
+    "health" : 150,
+    "hunger" : 150,
+    "sanity" : 200,
+    "perks" : ["Has a lovely axe", "Terrible Secret", "Celebrates Thanksgiving too early"]
+  },
+  {
+    "name" : "wes",
+    "health" : 113,
+    "hunger" : 113,
+    "sanity" : 150,
+    "perks" : ["Can't talk", "Has trouble staying alive", "Practices Balloonomancy"]
+  },
+  {
+    "name" : "maxwell",
+    "health" : 75,
+    "hunger" : 150,
+    "sanity" : 200,
+    "perks" : ["Is dapper but frail", "Can split his mind into pieces", "On a first-name basis with the night"]
   }
+
 ]
