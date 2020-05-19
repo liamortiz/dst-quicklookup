@@ -27,13 +27,11 @@ function CharacterCard(props) {
     </div>
   );
 }
-
-
 // Character page, it loads the character json data and creates a card for each of them.
 function Characters() {
   return (
     <div id = "character-wrapper">
-      <h2>Characters</h2>
+      <h1 className = "main-heading">Characters</h1>
       <div id = "character-cards">
         {
           character_data.map((data, index) => {

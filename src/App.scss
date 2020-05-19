@@ -145,7 +145,6 @@ nav {
   margin-bottom: 8em;
   #post-active {
     background-color: $navigation-color;
-    opacity: 0.6;
   }
   ul {
     max-width: 100px;
@@ -310,27 +309,28 @@ nav {
     }
   }
 }
+.main-heading {
+  text-align: center;
+  font-family: 'ds-font', sans-serif;
+  font-size: 300%;
+}
 /*-------------------Character Page----------*/
 #character-wrapper {
   width: 100%;
-  h2 {
-    text-align: center;
-    font-family: 'ds-font', sans-serif;
-    font-size: 300%;
-  }
 }
 #character-cards {
   padding: 1em;
-  margin: auto;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1000px;
+  margin: auto;
+
   .character-container {
     display: inline-block;
     max-width: 250px;
     min-height: 400px;
-    margin: 1em 0;
+    margin: 1em .5em 0 .5em;
     overflow: hidden;
     img {
       padding: .5em;
@@ -384,8 +384,61 @@ nav {
     }
   }
 }
+/*-------------------Recipe Page----------*/
+.quick-search {
+  margin: 2em auto;
+  display: block;
+  height: 25px;
+  color: gray;
+  padding: .1em;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}
+#recipe-wrapper {
+  width: 100%;
+  #recipe-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 600px;
+    margin: auto;
 
+    .recipe-box {
+      display: inline-block;
+      position: relative;
+      margin: 0 .5em 1em .5em;
 
+      .thumbnail {
+        padding: .2em;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: $post-heading-color;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .expand {
+        height: 20px;
+        background-color: $post-bg-color;
+        img {
+          display: block;
+          width: 15px;
+          height: 20px;
+          margin: auto;
+        }
+        &:hover {
+          cursor: pointer;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
 
 /*--------------Footer-----------------*/
 footer {

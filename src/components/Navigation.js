@@ -28,23 +28,23 @@ class Navigation extends Component {
           <Dropdown id = "Recipes"
             items = {
               <ul>
-                <li><a href = "index.html">All</a></li>
-                <li><a href = "index.html">Don't Starve</a></li>
-                <li><a href = "index.html">DST</a></li>
-                <li><a href = "index.html">Shipwrecked</a></li>
-                <li><a href = "index.html">Hamlet</a></li>
+                <li><a href = "recipes#all">All</a></li>
+                <li><a href = "recipes#ds">Don't Starve</a></li>
+                <li><a href = "recipes#dst">Dst</a></li>
+                <li><a href = "recipes#shipwrecked">Shipwrecked</a></li>
+                <li><a href = "recipes#hamlet">Hamlet</a></li>
               </ul>
             }
             />
           <Dropdown id = "Crafting"
             items = {
               <ul>
-                <li><a href = "index.html">Tools</a></li>
-                <li><a href = "index.html">Light</a></li>
-                <li><a href = "index.html">Survival</a></li>
-                <li><a href = "index.html">Food</a></li>
-                <li><a href = "index.html">Science</a></li>
-                <li><a href = "index.html">Fight</a></li>
+                <li><a href = "crafting">Tools</a></li>
+                <li><a href = "crafting">Light</a></li>
+                <li><a href = "crafting">Survival</a></li>
+                <li><a href = "crafting">Food</a></li>
+                <li><a href = "crafting">Science</a></li>
+                <li><a href = "crafting">Fight</a></li>
               </ul>
             }
             />

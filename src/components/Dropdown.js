@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
 import arrowdown from '../images/arrowdown.png';
 
 class Dropdown extends Component {
@@ -26,14 +27,20 @@ class Dropdown extends Component {
     return (
       <React.Fragment>
         <li onMouseLeave = {this.handleHoverLeave}>
-          <a href = "index.html" onMouseEnter = {this.handleHoverEnter}>{this.props.id}
+          <NavLink activeClassName = "active"
+            to = {`${this.props.id.toLowerCase()}`}
+            onMouseEnter = {this.handleHoverEnter}>
+
+            {this.props.id}
+
             <img
             src = {arrowdown}
             alt = "expand selection"
             width = "10"
             height = "10"
             id = {`img-${this.props.id}`} />
-          </a>
+
+          </NavLink>
           <div className = "dropdown-container" id = {this.props.id}>{this.props.items}</div>
         </li>
       </React.Fragment>
