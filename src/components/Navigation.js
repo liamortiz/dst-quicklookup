@@ -41,7 +41,7 @@ class Navigation extends Component {
           <h1><a href ="index.html">DSTLookup</a></h1>
         </div>
         <ul>
-          <li><a href = "home" id = "active">Home</a></li>
+          <li><a href = "/" id = "active">Home</a></li>
           <li><a href = "characters">Characters</a></li>
           <Dropdown id = "Mobs" items = {dropdown_items["mobs"]} />
           <li><a href = "index.html">Recipes</a></li>

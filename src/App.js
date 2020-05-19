@@ -1,23 +1,24 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
 import Navigation from './components/Navigation';
 import HomePage from './components/Home';
 import CharacterPage from './components/Characters';
-
-import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './App.scss';
 import './mobile.scss';
 
 function App() {
-  console.log("Hello")
   return (
     <Router>
       <div className="App">
         <Navigation />
 
         <div id = "wrapper">
-          <Route path = "/home" component = {HomePage}/>
-          <Route path = "/characters" component = {CharacterPage}/>
+          <Switch>
+            <Route path = "/" exact component = {HomePage}/>
+            <Route path = "/characters" exact component = {CharacterPage}/>
+          </Switch>
         </div>
 
       </div>

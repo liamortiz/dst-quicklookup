@@ -4,7 +4,7 @@ const IMAGES = require.context('../images/characters');
 function CharacterCard(props) {
   return (
     <div className = "character-container">
-      <img src = {IMAGES(`./${props.name}.png`)} />
+      <img src = {IMAGES(`./${props.name}.png`)} alt = {`${props.name}`}/>
       <div className = "character-stats">
         <span className = "health">{props.health}</span>
         <span className = "hunger">{props.hunger}</span>
