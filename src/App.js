@@ -5,11 +5,11 @@ import CharacterPage from './components/Characters';
 
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
-// CSS Sheets
 import './App.scss';
 import './mobile.scss';
 
 function App() {
+  console.log("Hello")
   return (
     <Router>
       <div className="App">
