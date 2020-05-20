@@ -2,41 +2,102 @@
     {
       "name" : "meatballs",
       "recipes" : [
-        ["morsels", "morsels", "morsels", "morsels"],
+        ["meats", "filler", "filler", "filler"],
         ["morsels", "berry", "berry", "berry"],
         ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
-        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
-        ["monster_meats", "berry", "berry", "berry"]
-      ]
-    },
-    {
-      "name" : "lobster_dinner",
-      "recipes" : [
-        ["morsels", "morsels", "morsels", "morsels"],
-        ["morsels", "berry", "berry", "berry"],
-        ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
-        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
-        ["monster_meats", "berry", "berry", "berry"]
+        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"]
       ]
     },
     {
       "name" : "bacon_and_eggs",
       "recipes" : [
-        ["morsels", "morsels", "morsels", "morsels"],
-        ["morsels", "berry", "berry", "berry"],
-        ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
-        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
-        ["monster_meats", "berry", "berry", "berry"]
+        ["monster_meats", "normal_meats", "small_eggs", "small_eggs"],
+        ["monster_meats", "frog_leg", "small_eggs", "small_eggs"],
+        ["monster_meats", "monster_meats", "small_eggs", "small_eggs"],
+        ["monster_meats", "morsels", "tallbird_eggs", "durians"]
       ]
     },
     {
-      "name" : "bacon_and_eggs",
+      "name" : "honey_ham",
       "recipes" : [
-        ["morsels", "morsels", "morsels", "morsels"],
-        ["morsels", "berry", "berry", "berry"],
-        ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
-        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
-        ["monster_meats", "berry", "berry", "berry"]
+        ["meats", "meats", "honey", "filler"],
+        ["monster_meats", "morsels", "frog_leg", "honey"],
+        ["normal_meats", "monster_meats", "honey", "berry"],
+        ["normal_meats", "monster_meats", "honey", "carrots"]
+      ]
+    },
+    {
+      "name" : "meaty_stew",
+      "recipes" : [
+        ["meats", "meats", "meats", "filler"],
+        ["normal_meats", "monster_meats", "morsels", "morsels"],
+        ["normal_meats", "normal_meats", "monster_meats", "carrots"],
+        ["normal_meats", "normal_meats", "frog_leg", "frog_leg"]
+      ]
+    },
+    {
+      "name" : "monster_lasagna",
+      "recipes" : [
+        ["monster_foods", "monster_foods", "filler", "filler"],
+        ["monster_meats", "monster_meats", "monster_meats", "monster_meats"],
+        ["monster_meats", "monster_meats", "berry", "berry"],
+        ["durians", "durians", "berry", "berry"]
+      ]
+    },
+    {
+      "name" : "pierogi",
+      "recipes" : [
+        ["meats", "eggs", "vegetables", "filler"],
+        ["morsels", "small_eggs", "mushrooms", "berries"],
+        ["monster_meats", "small_eggs", "mushrooms", "mushrooms"],
+        ["frog_leg", "small_eggs", "small_eggs", "mushrooms"]
+      ]
+    },
+    {
+      "name" : "kabobs",
+      "recipes" : [
+        ["meats", "twigs", "filler", "filler"],
+        ["morsels", "twigs", "berry", "berry"],
+        ["monster_meats", "twigs", "honey", "honey"],
+        ["morsels", "twigs", "monster_meats", "honey"]
+      ]
+    },
+    {
+      "name" : "honey_nuggets",
+      "recipes" : [
+        ["meats", "meats", "honey", "filler"],
+        ["morsels", "honey", "berry", "berry"],
+        ["monster_meats", "honey", "honey", "berry"],
+        ["morsels", "honey", "honey", "honey"]
+      ]
+    },
+    {
+      "name" : "froggle_bunwich",
+      "recipes" : [
+        ["frog_leg", "vegetables", "filler", "filler"],
+        ["frog_legs", "mushrooms", "twigs", "twigs"],
+        ["frog_legs", "carrots", "berry", "berry"]
+      ]
+    },
+    {
+      "name" : "turkey_dinner",
+      "recipes" : [
+        ["drumstick", "drumstick", "meats", "vegetables"],
+        ["drumstick", "drumstick", "meats", "fruit"]
+      ]
+    },
+    {
+      "name" : "caviar",
+      "recipes" : [
+        ["roe", "vegetables", "filler", "filler"],
+        ["cooked_roe", "cooked_roe", "cooked_roe", "vegetables"]
+      ]
+    },
+    {
+      "name" : "feijoada",
+      "recipes" : [
+        ["bean_bugs", "bean_bugs", "bean_bugs", "meats"],
+        ["cooked_bean_bugs", "cooked_bean_bugs", "cooked_bean_bugs", "berries"]
       ]
     }
 ]

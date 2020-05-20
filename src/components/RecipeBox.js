@@ -1,42 +1,49 @@
 import React, {Component} from 'react';
 const IMAGES = require.context('../images/item_icons');
 
-function getRecipes(nested_array) {
-  // Loops through the nested arrays and splits each set into individual ul elements
+function getImage(item_name, index) {
   return (
-    nested_array.map((set, index) => {
-      return (
-        <ul key = {index} className = "dish_recipes">
-          {
-            set.map((food_item, index) => {
-              return (
-                <li key = {index}>
-                  <img
-                  src = {IMAGES(`./food/${food_item}.png`)}
-                  alt = {food_item}
-                  title = {food_item}
-                  className = "hud-background"
-                  />
-                </li>
-              )
-            })
-          }
-        </ul>
-      )
-    })
+    <li key = {index}>
+      <img
+      src = {IMAGES(`./food/${item_name}.png`)}
+      alt = {item_name}
+      title = {item_name}
+      className = "hud-background"
+      />
+    </li>
   )
+}
+// Loops through recipe nested array and returns the recipe in sets.
+function getRecipes(data, all=false) {
+  // data -> [[4], [4], [4], [4]]
+  if (all) {
+    return (
+      data.map((set) => {
+        return (
+          <ul className = "dish_recipes fade">
+            {set.map((item_name, index) => {
+              return (getImage(item_name, index))
+            })}
+          </ul>)}))
+  }
+  return (
+    <ul className = "dish_recipes fade">
+      {data[0].map((item_name, index) => {
+        return (getImage(item_name, index))
+      })}
+    </ul>)
 }
 class RecipeBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
       expanded : false,
-      recipes : getRecipes(this.props.recipes)[0]}
+      recipes : getRecipes(this.props.recipes)}
   }
   handleClick = (event) => {
     // Doing this helps to lower http requests for the images, I tried hiding them with display
     // But the requests were still being sent.
-    let recipes = (this.state.expanded) ? getRecipes(this.props.recipes)[0] : getRecipes(this.props.recipes)
+    let recipes = getRecipes(this.props.recipes, !this.state.expanded);
     this.setState({expanded : !this.state.expanded, recipes : recipes})
 
     // Arrow animation
