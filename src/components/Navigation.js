@@ -9,7 +9,7 @@ class Navigation extends Component {
     this.state = {input_value : "Quick Search"};
   }
   handleInput(event){
-    this.setState({input_value : event.value});
+    this.setState({input_value : event.target.value});
   }
   focusInput(event){
     this.setState({input_value : ""});

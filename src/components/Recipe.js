@@ -2,15 +2,32 @@ import React, {Component} from 'react';
 import RecipeBox from './RecipeBox';
 import Footer from './Footer';
 
-import recipes_json from '../data/recipes_ds.json';
+import recipes_data from '../data/recipes_ds.json';
 
 class Recipe extends Component {
   constructor(props) {
     super(props);
-    this.state = {input_value : "Find by Name"};
+    this.state = {
+      input_value : "Filter by Name",
+      recipes : recipes_data
+    };
   }
   handleInput = (event) => {
-    this.setState({input_value : event.value});
+    let user_input = event.target.value;
+    user_input = user_input.toLowerCase().replace(" ", "_");
+
+    // If user leaves search field blank , show everything
+    let filtered_recipes = (user_input === "") ? recipes_data : []
+
+    // The user is searching for something filter by name
+    if (filtered_recipes.length === 0) {
+      filtered_recipes = recipes_data.filter(data => data.name.includes(user_input))
+    }
+    // Update the recipes being shown
+    this.setState({
+      input_value : user_input,
+      recipes : filtered_recipes
+    })
   }
   focusInput = (event) => {
     this.setState({input_value : ""});
@@ -29,7 +46,7 @@ class Recipe extends Component {
 
         <div id = "recipe-container">
           {
-            recipes_json.map((data, index) => {
+            this.state.recipes.map((data, index) => {
               return (<RecipeBox key = {index} name = {data.name} recipes = {data.recipes}/>)
             })
           }
