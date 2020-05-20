@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import RecipeBox from './RecipeBox';
+import Footer from './Footer';
+
+import recipes_json from '../data/recipes_ds.json';
 
 class Recipe extends Component {
   constructor(props) {
@@ -25,19 +28,13 @@ class Recipe extends Component {
         />
 
         <div id = "recipe-container">
-          <RecipeBox name = "meatballs" />
-          <RecipeBox name = "lobster_dinner" />
-          <RecipeBox name = "bacon_and_eggs" />
-          <RecipeBox name = "meatballs" />
-          <RecipeBox name = "lobster_dinner" />
-          <RecipeBox name = "bacon_and_eggs" />
-          <RecipeBox name = "meatballs" />
-          <RecipeBox name = "lobster_dinner" />
-          <RecipeBox name = "bacon_and_eggs" />
-          <RecipeBox name = "meatballs" />
-          <RecipeBox name = "lobster_dinner" />
-          <RecipeBox name = "bacon_and_eggs" />
+          {
+            recipes_json.map((data, index) => {
+              return (<RecipeBox key = {index} name = {data.name} recipes = {data.recipes}/>)
+            })
+          }
         </div>
+        <Footer />
       </div>
     );
   }

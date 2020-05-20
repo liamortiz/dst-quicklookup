@@ -1,0 +1,42 @@
+[
+    {
+      "name" : "meatballs",
+      "recipes" : [
+        ["morsels", "morsels", "morsels", "morsels"],
+        ["morsels", "berry", "berry", "berry"],
+        ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
+        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
+        ["monster_meats", "berry", "berry", "berry"]
+      ]
+    },
+    {
+      "name" : "lobster_dinner",
+      "recipes" : [
+        ["morsels", "morsels", "morsels", "morsels"],
+        ["morsels", "berry", "berry", "berry"],
+        ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
+        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
+        ["monster_meats", "berry", "berry", "berry"]
+      ]
+    },
+    {
+      "name" : "bacon_and_eggs",
+      "recipes" : [
+        ["morsels", "morsels", "morsels", "morsels"],
+        ["morsels", "berry", "berry", "berry"],
+        ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
+        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
+        ["monster_meats", "berry", "berry", "berry"]
+      ]
+    },
+    {
+      "name" : "bacon_and_eggs",
+      "recipes" : [
+        ["morsels", "morsels", "morsels", "morsels"],
+        ["morsels", "berry", "berry", "berry"],
+        ["frog_leg", "frog_leg", "frog_leg", "frog_leg"],
+        ["monster_meats", "mushrooms", "mushrooms", "mushrooms"],
+        ["monster_meats", "berry", "berry", "berry"]
+      ]
+    }
+]

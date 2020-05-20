@@ -8,10 +8,10 @@ class Navigation extends Component {
     super(props);
     this.state = {input_value : "Quick Search"};
   }
-  handleInput = (event) => {
+  handleInput(event){
     this.setState({input_value : event.value});
   }
-  focusInput = (event) => {
+  focusInput(event){
     this.setState({input_value : ""});
   }
 
@@ -24,18 +24,8 @@ class Navigation extends Component {
         <ul>
           <li><NavLink exact = {true} activeClassName = "active" to = "/">Home</NavLink></li>
           <li><NavLink activeClassName = "active" to = "characters">Characters</NavLink></li>
+          <li><NavLink activeClassName = "active" to = "recipes">Recipes</NavLink></li>
 
-          <Dropdown id = "Recipes"
-            items = {
-              <ul>
-                <li><a href = "recipes#all">All</a></li>
-                <li><a href = "recipes#ds">Don't Starve</a></li>
-                <li><a href = "recipes#dst">Dst</a></li>
-                <li><a href = "recipes#shipwrecked">Shipwrecked</a></li>
-                <li><a href = "recipes#hamlet">Hamlet</a></li>
-              </ul>
-            }
-            />
           <Dropdown id = "Crafting"
             items = {
               <ul>

@@ -396,6 +396,12 @@ nav {
     outline: none;
   }
 }
+.hud-background {
+  background-image: url("./images/hud01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #recipe-wrapper {
   width: 100%;
   #recipe-container {
@@ -403,37 +409,63 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
 
     .recipe-box {
-      display: inline-block;
-      position: relative;
-      margin: 0 .5em 1em .5em;
+      margin-bottom: 1em;
+      margin-left: 1em;
+      margin-right: 1em;
 
-      .thumbnail {
-        padding: .2em;
-        width: 64px;
-        height: 64px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: $post-heading-color;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
+      .arrow {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url("./images/arrow_right.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: .2em;
       }
-      .expand {
+      .seperator {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        float: right;
+      }
+      .dropdown {
+        background-color: $post-heading-color;
+        background-image: url("./images/arrowdown.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 50px;
         height: 20px;
-        background-color: $post-bg-color;
+        margin: auto;
+        border-radius: 10px;
+        transition: transform .2s;
         img {
           display: block;
-          width: 15px;
+          width: 20px;
           height: 20px;
-          margin: auto;
+          margin: 0 auto;
         }
         &:hover {
           cursor: pointer;
-          opacity: 0.9;
+        }
+      }
+
+      .dish_recipes {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        float: right;
+        transition: max-height 2s;
+        li {
+          float: left;
+          margin-left: .1em;
+          margin-right: .1em;
         }
       }
     }
