@@ -20,14 +20,14 @@ function getRecipes(data, all=false) {
     return (
       data.map((set) => {
         return (
-          <ul className = "dish_recipes fade">
+          <ul className = "dish_recipes">
             {set.map((item_name, index) => {
               return (getImage(item_name, index))
             })}
           </ul>)}))
   }
   return (
-    <ul className = "dish_recipes fade">
+    <ul className = "dish_recipes">
       {data[0].map((item_name, index) => {
         return (getImage(item_name, index))
       })}

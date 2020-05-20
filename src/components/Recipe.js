@@ -30,7 +30,9 @@ class Recipe extends Component {
     })
   }
   focusInput = (event) => {
-    this.setState({input_value : ""});
+    if (event.target.value === "Filter by Name") {
+      this.setState({input_value : ""});
+    }
   }
   render() {
     return(
@@ -46,8 +48,8 @@ class Recipe extends Component {
 
         <div id = "recipe-container">
           {
-            this.state.recipes.map((data, index) => {
-              return (<RecipeBox key = {index} name = {data.name} recipes = {data.recipes}/>)
+            this.state.recipes.map((data) => {
+              return (<RecipeBox key = {data.name} name = {data.name} recipes = {data.recipes}/>)
             })
           }
         </div>

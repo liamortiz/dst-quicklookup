@@ -65,7 +65,7 @@
     {
       "name" : "honey_nuggets",
       "recipes" : [
-        ["meats", "meats", "honey", "filler"],
+        ["meats", "morsels", "honey", "filler"],
         ["morsels", "honey", "berry", "berry"],
         ["monster_meats", "honey", "honey", "berry"],
         ["morsels", "honey", "honey", "honey"]

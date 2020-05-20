@@ -419,6 +419,8 @@ nav {
     flex-wrap: wrap;
     justify-content: flex-start;
     max-width: 900px;
+    min-height: 800px;
+    align-content: flex-start;
     margin: auto;
 
     .recipe-box {
@@ -443,7 +445,7 @@ nav {
         float: right;
       }
       .dropdown {
-        background-color: $post-heading-color;
+        background-color: $navigation-color;
         background-image: url("./images/arrowdown.png");
         background-repeat: no-repeat;
         background-size: contain;
