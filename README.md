@@ -30,4 +30,4 @@
 </ul>
 
 <p>:point_right: The website is currently not being hosted</p>
-<img src="https://i.ibb.co/q5j1X4y/Capture.png" alt="Capture" border="0">
+<img src="https://i.ibb.co/7YbL6v1/captured.gif" alt="captured" border="0">
