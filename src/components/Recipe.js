@@ -2,22 +2,37 @@ import React, {Component} from 'react';
 import RecipeBox from './RecipeBox';
 import Footer from './Footer';
 
-import recipes_data from '../data/recipes_ds.json';
+import recipes_data from '../data/recipes.json';
 
 class Recipe extends Component {
   constructor(props) {
     super(props);
     this.state = {
       input_value : "Filter by Name",
-      recipes : recipes_data
+      recipes : recipes_data.slice(0, 12),
+      page_index : 1
     };
   }
+  // Switches between pages depending on the index and recipe length
+  getRecipes(current_index=this.state.page_index) {
+    let num_recipes = recipes_data.length;
+    let max_index = 12 * current_index;
+    let min_index = max_index - 12;
+
+    if (max_index > num_recipes) {
+      max_index = num_recipes;
+      min_index = num_recipes - ((current_index - 1) * 12);
+      min_index = num_recipes - min_index;
+    }
+    return  recipes_data.slice(min_index, max_index)
+  }
   handleInput = (event) => {
+    // Get user input and replace space with _
     let user_input = event.target.value;
     user_input = user_input.toLowerCase().replace(" ", "_");
 
-    // If user leaves search field blank , show everything
-    let filtered_recipes = (user_input === "") ? recipes_data : []
+    // If user leaves input blank show all else filter
+    let filtered_recipes = (user_input === "") ? this.getRecipes() : []
 
     // The user is searching for something filter by name
     if (filtered_recipes.length === 0) {
@@ -33,6 +48,17 @@ class Recipe extends Component {
     if (event.target.value === "Filter by Name") {
       this.setState({input_value : ""});
     }
+  }
+  handleClick = (event, index) => {
+    if (this.state.page_index === index) {return}
+
+    document.getElementById('post-active').removeAttribute('id');
+    event.target.id = "post-active";
+
+    this.setState({
+      page_index : index,
+      recipes : this.getRecipes(index)
+    })
   }
   render() {
     return(
@@ -52,6 +78,13 @@ class Recipe extends Component {
               return (<RecipeBox key = {data.name} name = {data.name} recipes = {data.recipes}/>)
             })
           }
+          <div className = "post-nav">
+            <ul>
+              <li id = "post-active" onClick = {(e) => this.handleClick(e, 1)}>1</li>
+              <li onClick = {(e) => this.handleClick(e, 2)}>2</li>
+              <li onClick = {(e) => this.handleClick(e, 3)}>3</li>
+            </ul>
+          </div>
         </div>
         <Footer />
       </div>

@@ -18,9 +18,9 @@ function getRecipes(data, all=false) {
   // data -> [[4], [4], [4], [4]]
   if (all) {
     return (
-      data.map((set) => {
+      data.map((set, index) => {
         return (
-          <ul className = "dish_recipes">
+          <ul key = {index} className = "dish_recipes">
             {set.map((item_name, index) => {
               return (getImage(item_name, index))
             })}

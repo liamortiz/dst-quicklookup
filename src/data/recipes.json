@@ -99,5 +99,100 @@
         ["bean_bugs", "bean_bugs", "bean_bugs", "meats"],
         ["cooked_bean_bugs", "cooked_bean_bugs", "cooked_bean_bugs", "berries"]
       ]
+    },
+    {
+      "name" : "asparagus_soup",
+      "recipes" : [
+        ["asparaguses", "vegetables", "filler", "filler"],
+        ["asparaguses", "asparaguses", "monster_meat", "twigs"]
+      ]
+    },
+    {
+      "name" : "banana_pop",
+      "recipes" : [
+        ["banana", "ice", "inedible", "filler"],
+        ["banana", "ice", "twigs", "filler"]
+      ]
+    },
+    {
+      "name" : "bisque",
+      "recipes" : [
+        ["limpets", "limpets", "limpets", "ice"]
+      ]
+    },
+    {
+      "name" : "butter_muffin",
+      "recipes" : [
+        ["butterfly_wings", "vegetables", "filler", "filler"],
+        ["moon_moth_wings", "vegetables", "filler", "filler"]
+      ]
+    },
+    {
+      "name" : "california_roll",
+      "recipes" : [
+        ["fishes", "seaweed", "seaweed", "filler"],
+        ["fishes", "kelp_frond", "kelp_frond", "filler"]
+      ]
+    },
+    {
+      "name" : "ceviche",
+      "recipes" : [
+        ["fishes", "fishes", "ice", "filler"]
+      ]
+    },
+    {
+      "name" : "coffee",
+      "recipes" : [
+        ["cooked_coffee_beans", "cooked_coffee_beans", "cooked_coffee_beans", "filler"]
+      ]
+    },
+    {
+      "name" : "creamy_potato_puree",
+      "recipes" : [
+        ["potatoes", "potatoes", "garlics", "filler"],
+        ["potatoes", "potatoes", "garlics", "ice"]
+      ]
+    },
+    {
+      "name" : "dragonpie",
+      "recipes" : [
+        ["dragon_fruits", "filler", "filler", "filler"],
+        ["dragon_fruits", "twigs", "twigs", "twigs"]
+      ]
+    },
+    {
+      "name" : "fancy_spiralled_tubers",
+      "recipes" : [
+        ["potatoes", "twigs", "filler", "filler"],
+        ["potatoes", "twigs", "twigs", "ice"]
+      ]
+    },
+    {
+      "name" : "fish_tacos",
+      "recipes" : [
+        ["fishes", "corns", "filler", "filler"],
+        ["fishes", "corns", "ice", "ice"]
+      ]
+    },
+    {
+      "name" : "fishsticks",
+      "recipes" : [
+        ["fishes", "twigs", "filler", "filler"],
+        ["limpets", "twigs", "berries", "berries"]
+      ]
+    },
+    {
+      "name" : "fist_full_of_jam",
+      "recipes" : [
+        ["fruit", "filler", "filler", "filler"],
+        ["coffee_beans", "coffee_beans", "coffee_beans", "ice"]
+      ]
+    },
+    {
+      "name" : "flower_salad",
+      "recipes" : [
+        ["cactus_flower", "vegetables", "vegetables", "filler"],
+        ["cactus_flower", "mushrooms", "mushrooms", "mushrooms"]
+      ]
     }
 ]
