@@ -60,6 +60,14 @@ class Recipe extends Component {
       recipes : this.getRecipes(index)
     })
   }
+  getPages() {
+    // Calculates the needed number of pages
+    let list = [<li key = {0} id = "post-active" onClick = {(e) => this.handleClick(e, 1)}>{1}</li>];
+    for(let i = 1; i < Math.ceil(recipes_data.length  / 12); i++) {
+      list.push(<li key = {i} onClick = {(e) => this.handleClick(e, i+1)}>{i+1}</li>)
+    }
+    return list;
+  }
   render() {
     return(
       <div id = "recipe-wrapper">
@@ -80,9 +88,7 @@ class Recipe extends Component {
           }
           <div className = "post-nav">
             <ul>
-              <li id = "post-active" onClick = {(e) => this.handleClick(e, 1)}>1</li>
-              <li onClick = {(e) => this.handleClick(e, 2)}>2</li>
-              <li onClick = {(e) => this.handleClick(e, 3)}>3</li>
+              {this.getPages()}
             </ul>
           </div>
         </div>
