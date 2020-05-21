@@ -12,7 +12,7 @@ function CraftPreview(props) {
         <div
         key = {name}
         className = "require-image"
-        style = {{backgroundImage : `url(${IMAGES(`./${name}.png`)})`}}>
+        style = {{backgroundImage : `url(${IMAGES(`./misc/${name}.png`)})`}}>
 
           <span>{`x${amount}`}</span>
 
