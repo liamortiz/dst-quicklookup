@@ -8,10 +8,10 @@ class Navigation extends Component {
     super(props);
     this.state = {input_value : "Quick Search"};
   }
-  handleInput(event){
+  handleInput = (event) => {
     this.setState({input_value : event.target.value});
   }
-  focusInput(event){
+  focusInput = (event) => {
     this.setState({input_value : ""});
   }
 

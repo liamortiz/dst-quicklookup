@@ -40,6 +40,9 @@ class RecipeBox extends Component {
       expanded : false,
       recipes : getRecipes(this.props.recipes)}
   }
+  getDropDown = () => {
+    return (this.props.recipes.length !== 1 ? <div className = "dropdown" onClick = {this.handleClick}></div> : "")
+  }
   handleClick = (event) => {
     // Doing this helps to lower http requests for the images, I tried hiding them with display
     // But the requests were still being sent.
@@ -62,7 +65,7 @@ class RecipeBox extends Component {
           <div className = "arrow"></div>
           <div className = "seperator">
             {this.state.recipes}
-            <div className = "dropdown" onClick = {this.handleClick}></div>
+            {this.getDropDown()}
           </div>
       </div>
     )
