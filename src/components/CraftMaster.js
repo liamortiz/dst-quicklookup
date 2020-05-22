@@ -1,7 +1,7 @@
 import React from 'react';
 import CraftPreview from './CraftPreview';
-import tools from '../data/tools.json';
-import fight_items from '../data/fight.json';
+import tools from '../data/tabs/tools.json';
+import fight_items from '../data/tabs/fight.json';
 
 // Returns an array of objects from the passed data randomly, non-repeated values
 function getPopularItems(data, number) {

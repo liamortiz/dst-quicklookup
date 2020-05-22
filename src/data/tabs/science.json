@@ -1,0 +1,30 @@
+[
+  {
+    "name" : "science_machine",
+    "require" : {"gold" : 1, "log" : 4, "rocks" : 4}
+  },
+  {
+    "name" : "alchemy_engine",
+    "require" : {"boards" : 4, "cut_stone" : 2, "gold" : 6}
+  },
+  {
+    "name" : "divining_rod",
+    "require" : {"twigs" : 1, "nightmare_fuel" : 4, "gears" : 1}
+  },
+  {
+    "name" : "thermal_measurer",
+    "require" : {"boards" : 2, "gold" : 2}
+  },
+  {
+    "name" : "rainometer",
+    "require" : {"boards" : 2, "gold" : 2, "rope" : 2}
+  },
+  {
+    "name" : "gunpowder",
+    "require" : {"rotten_egg" : 1, "charcoal" : 1, "nitre" : 1}
+  },
+  {
+    "name" : "lightning_rod",
+    "require" : {"gold" : 3, "cut_stone" : 1}
+  }
+]

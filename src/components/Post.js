@@ -8,7 +8,7 @@ function Post(props) {
           <span className = "release-date">{props.date}</span>
         </h2>
 
-        <a href = {props.href} title = "Visit Klei Website">
+        <a href = {props.href} target = "_blank" title = "Visit Original Wiki" rel="noopener noreferrer">
           <img
             src = {IMAGES(props.image)}
             alt = {props.title}

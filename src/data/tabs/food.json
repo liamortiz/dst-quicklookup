@@ -1,0 +1,26 @@
+[
+  {
+    "name" : "basic_farm",
+    "require" : {"cut_grass" : 8, "manure" : 4, "log" : 4}
+  },
+  {
+    "name" : "improved_farm",
+    "require" : {"cut_grass" : 10, "manure" : 6, "rocks" : 4}
+  },
+  {
+    "name" : "bee_box",
+    "require" : {"boards" : 2, "honeycomb" : 1, "bee" : 4}
+  },
+  {
+    "name" : "drying_rack",
+    "require" : {"twigs" : 3, "charcoal" : 2, "rope" : 3}
+  },
+  {
+    "name" : "crock_pot",
+    "require" : {"cut_stone" : 3, "charcoal" : 6, "twigs" : 6}
+  },
+  {
+    "name" : "ice_box",
+    "require" : {"boards" : 1, "gears" : 1, "gold" : 2}
+  }
+]

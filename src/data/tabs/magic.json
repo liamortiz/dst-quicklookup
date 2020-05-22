@@ -1,0 +1,70 @@
+[
+  {
+    "name" : "meat_effigy",
+    "require" : {"boards" : 4, "cooked_meat" : 4, "beard_hair" : 4}
+  },
+  {
+    "name" : "prestihatitator",
+    "require" : {"rabbit" : 4, "boards" : 4, "top_hat" : 1}
+  },
+  {
+    "name" : "shadow_manipulator",
+    "require" : {"living_log" : 3, "purple_gem" : 1, "nightmare_fuel" : 7}
+  },
+  {
+    "name" : "pan_flute",
+    "require" : {"cut_reeds" : 5, "mandrake" : 1, "rope" : 1}
+  },
+  {
+    "name" : "one-man_band",
+    "require" : {"gold" : 2, "nightmare_fuel" : 4, "pig_skin" : 2}
+  },
+  {
+    "name" : "night_light",
+    "require" : {"gold" : 8, "nightmare_fuel" : 2, "red_gem" : 1}
+  },
+  {
+    "name" : "dark_sword",
+    "require" : {"nightmare_fuel" : 5, "living_log" : 1}
+  },
+  {
+    "name" : "night_armor",
+    "require" : {"nightmare_fuel" : 5, "papyrus" : 3}
+  },
+  {
+    "name" : "bat_bat",
+    "require" : {"batilisk_wing" : 5, "living_log" : 2, "purple_gem" : 1}
+  },
+  {
+    "name" : "belt_of_hunger",
+    "require" : {"slurper_pelt" : 6, "rope" : 2, "nightmare_fuel" : 2}
+  },
+  {
+    "name" : "life_giving_amulet",
+    "require" : {"gold" : 3, "nightmare_fuel" : 2, "red_gem" : 1}
+  },
+  {
+    "name" : "chilled_amulet",
+    "require" : {"gold" : 3, "blue_gem" : 1}
+  },
+  {
+    "name" : "nightmare_amulet",
+    "require" : {"gold" : 6, "nightmare_fuel" : 4, "purple_gem" : 2}
+  },
+  {
+    "name" : "fire_staff",
+    "require" : {"nightmare_fuel" : 2, "spear" : 1, "red_gem" : 1}
+  },
+  {
+    "name" : "ice_staff",
+    "require" : {"spear" : 1, "blue_gem" : 1}
+  },
+  {
+    "name" : "telelocator_staff",
+    "require" : {"nightmare_fuel" : 4, "living_log" : 2, "purple_gem" : 2}
+  },
+  {
+    "name" : "telelocator_focus",
+    "require" : {"nightmare_fuel" : 4, "living_log" : 4, "gold" : 8}
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "name" : "axe",
+    "require" : {"twigs" : 1, "flint" : 1}
+  },
+  {
+    "name" : "luxury_axe",
+    "require" : {"twigs" : 4, "gold" : 2}
+  },
+  {
+    "name" : "pickaxe",
+    "require" : {"twigs" : 2, "flint" : 2}
+  },
+  {
+    "name" : "opulent_pickaxe",
+    "require" : {"twigs" : 4, "gold" : 2}
+  },
+  {
+    "name" : "shovel",
+    "require" : {"twigs" : 2, "flint" : 2}
+  },
+  {
+    "name" : "regal_shovel",
+    "require" : {"twigs" : 4, "gold" : 2}
+  },
+  {
+    "name" : "saddle",
+    "require" : {"beefalo_wool" : 4, "gold" : 4, "pig_skin" : 4}
+  },
+  {
+    "name" : "feather_pencil",
+    "require" : {"charcoal" : 1, "jet_feather" : 1, "twigs" : 1}
+  },
+  {
+    "name" : "hammer",
+    "require" : {"twigs" : 3, "rocks" : 3, "rope" : 2}
+  },
+  {
+    "name" : "brush",
+    "require" : {"steel_wool" : 1, "walrus_tusk" : 1, "gold" : 2}
+  },
+  {
+    "name" : "pitchfork",
+    "require" : {"twigs" : 2, "flint" : 2}
+  },
+  {
+    "name" : "razor",
+    "require" : {"twigs" : 2, "flint" : 2}
+  },
+  {
+    "name" : "saddlehorn",
+    "require" : {"twigs" : 2, "bone_shards" : 2, "jet_feather" : 1}
+  },
+  {
+    "name" : "war_saddle",
+    "require" : {"rabbit" : 4, "steel_wool" : 4, "log" : 10}
+  },
+  {
+    "name" : "glossamer_saddle",
+    "require" : {"living_log" : 2, "silk" : 2, "butterfly_wings" : 68}
+  },
+  {
+    "name" : "salt_lick",
+    "require" : {"boards" : 2, "nitre" : 4}
+  }
+]

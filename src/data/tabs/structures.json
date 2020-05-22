@@ -1,0 +1,66 @@
+[
+  {
+    "name" : "chest",
+    "require" : {"boards" : 3}
+  },
+  {
+    "name" : "sign",
+    "require" : {"boards" : 1}
+  },
+  {
+    "name" : "mini_sign",
+    "require" : {"boards" : 1}
+  },
+  {
+    "name" : "wood_fence",
+    "require" : {"twigs" : 3, "rope" : 1}
+  },
+  {
+    "name" : "wood_gate",
+    "require" : {"boards" : 2, "rope" : 1}
+  },
+  {
+    "name" : "hay_wall",
+    "require" : {"cut_grass" : 4, "twigs" : 2}
+  },
+  {
+    "name" : "wood_wall",
+    "require" : {"boards" : 2, "rope" : 1}
+  },
+  {
+    "name" : "stone_wall",
+    "require" : {"cut_stone" : 2}
+  },
+  {
+    "name" : "pig_house",
+    "require" : {"boards" : 4, "cut_stone" : 3, "pig_skin" : 4}
+  },
+  {
+    "name" : "rabbit_hutch",
+    "require" : {"boards" : 4, "carrot" : 10, "bunny_puff" : 4}
+  },
+  {
+    "name" : "birdcage",
+    "require" : {"papyrus" : 2, "gold" : 6, "seeds" : 2}
+  },
+  {
+    "name" : "cobblestones",
+    "require" : {"boards" : 1, "rocky_turf" : 1}
+  },
+  {
+    "name" : "wooden_flooring",
+    "require" : {"boards" : 1}
+  },
+  {
+    "name" : "checkerboard_flooring",
+    "require" : {"marble" : 1}
+  },
+  {
+    "name" : "carpeted_flooring",
+    "require" : {"boards" : 1, "beefalo_wool" : 1}
+  },
+  {
+    "name" : "potted_fern",
+    "require" : {"foliage" : 5, "broken_shell" : 1}
+  }
+]

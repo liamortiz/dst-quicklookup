@@ -1,0 +1,54 @@
+[
+  {
+    "name" : "spear",
+    "require" : {"twigs" : 2, "flint" : 1, "rope" : 1}
+  },
+  {
+    "name" : "ham_bat",
+    "require" : {"pig_skin" : 1, "twigs" : 2, "meat" : 2}
+  },
+  {
+    "name" : "boomerang",
+    "require" : {"boards" : 1, "silk" : 1, "charcoal" : 1}
+  },
+  {
+    "name" : "tooth_trap",
+    "require" : {"log" : 1, "rope" : 1, "hounds_tooth" : 1}
+  },
+  {
+    "name" : "sleep_dart",
+    "require" : {"jet_feather" : 1, "stinger" : 1, "cut_reeds" : 2}
+  },
+  {
+    "name" : "fire_dart",
+    "require" : {"cut_reeds" : 2, "charcoal" : 1, "crimson_feather" : 1}
+  },
+  {
+    "name" : "blow_dart",
+    "require" : {"cut_reeds" : 2, "hounds_tooth" : 1, "azure_feather" : 1}
+  },
+  {
+    "name" : "morning_star",
+    "require" : {"volt_goat_horn" : 1, "electrical_doodad" : 2, "nitre" : 2}
+  },
+  {
+    "name" : "grass_suit",
+    "require" : {"cut_grass" : 10, "twigs" : 2}
+  },
+  {
+    "name" : "log_suit",
+    "require" : {"log" : 8, "rope" : 2}
+  },
+  {
+    "name" : "marble_suit",
+    "require" : {"marble" : 12, "rope" : 4}
+  },
+  {
+    "name" : "football_helmet",
+    "require" : {"pig_skin" : 1, "rope" : 1}
+  },
+  {
+    "name" : "bee_mine",
+    "require" : {"boards" : 1, "bee" : 4, "flint" : 1}
+  }
+]

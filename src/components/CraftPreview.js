@@ -23,7 +23,7 @@ function CraftPreview(props) {
   }
   return (
     <div className = "craft-container">
-      <img src = {IMAGES(`./${props.category}/${props.name}.png`)}
+      <img src = {IMAGES(`./tabs/${props.category}/${props.name}.png`)}
       alt = {`${props.name}`}
       title = {`${props.name}`}
       className = "parent-image hud-background" />

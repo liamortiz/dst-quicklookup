@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "trap",
+    "require" : {"cut_grass" : 6, "twigs" : 2}
+  },
+  {
+    "name" : "bird_trap",
+    "require" : {"twigs" : 3, "silk" : 4}
+  },
+  {
+    "name" : "bug_net",
+    "require" : {"twigs" : 4, "silk" : 2, "rope" : 1}
+  },
+  {
+    "name" : "fishing_rod",
+    "require" : {"twigs" : 2, "silk" : 2}
+  },
+  {
+    "name" : "umbrella",
+    "require" : {"twigs" : 6, "pig_skin" : 1, "silk" : 2}
+  },
+  {
+    "name" : "honey_poultice",
+    "require" : {"papyrus" : 1, "honey" : 2}
+  },
+  {
+    "name" : "healing_salve",
+    "require" : {"ashes" : 2, "rocks" : 1, "spider_gland" : 1}
+  },
+  {
+    "name" : "compass",
+    "require" : {"gold" : 1, "papyrus" : 1}
+  },
+  {
+    "name" : "thermal_stone",
+    "require" : {"rocks" : 10, "pickaxe" : 1, "flint" : 3}
+  },
+  {
+    "name" : "backpack",
+    "require" : {"cut_grass" : 4, "twigs" : 4}
+  },
+  {
+    "name" : "piggyback",
+    "require" : {"pig_skin" : 4, "silk" : 6, "rope" : 2}
+  },
+  {
+    "name" : "straw_roll",
+    "require" : {"cut_grass" : 6, "rope" : 1}
+  },
+  {
+    "name" : "fur_roll",
+    "require" : {"straw_roll" : 1, "bunny_puff" : 2}
+  },
+  {
+    "name" : "tent",
+    "require" : {"silk" : 6, "twigs" : 4, "rope" : 3}
+  },
+  {
+    "name" : "bundling_wrap",
+    "require" : {"wax_paper" : 1, "rope" : 1}
+  }
+]

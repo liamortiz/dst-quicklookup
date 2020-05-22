@@ -1,0 +1,26 @@
+[
+  {
+    "name" : "campfire_build",
+    "require" : {"log" : 2, "cut_grass" : 3}
+  },
+  {
+    "name" : "fire_pit",
+    "require" : {"log" : 2, "rocks" : 12}
+  },
+  {
+    "name" : "torch",
+    "require" : {"cut_grass" : 2, "twigs" : 2}
+  },
+  {
+    "name" : "miner_hat",
+    "require" : {"straw_hat" : 1, "gold" : 1, "fireflies" : 1}
+  },
+  {
+    "name" : "pumpkin_lantern",
+    "require" : {"pumpkin" : 1, "fireflies" : 1}
+  },
+  {
+    "name" : "lantern",
+    "require" : {"light_bulb" : 2, "twigs" : 3, "rope" : 2}
+  }
+]

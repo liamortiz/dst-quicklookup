@@ -1,0 +1,58 @@
+[
+  {
+    "name" : "sewing_kit",
+    "require" : {"log" : 1, "silk" : 8, "hounds_tooth" : 2}
+  },
+  {
+    "name" : "garland",
+    "require" : {"petals" : 12}
+  },
+  {
+    "name" : "straw_hat",
+    "require" : {"cut_grass" : 12}
+  },
+  {
+    "name" : "top_hat",
+    "require" : {"silk" : 6}
+  },
+  {
+    "name" : "beekeeper_hat",
+    "require" : {"silk" : 8, "rope" : 1}
+  },
+  {
+    "name" : "rabbit_earmuffs",
+    "require" : {"rabbit" : 2, "twigs" : 1}
+  },
+  {
+    "name" : "beefalo_hat",
+    "require" : {"beefalo_wool" : 8, "beefalo_horn" : 1}
+  },
+  {
+    "name" : "feather_hat",
+    "require" : {"jet_feather" : 3, "crimson_feather" : 2, "tentacle_spots" : 2}
+  },
+  {
+    "name" : "bush_hat",
+    "require" : {"straw_hat" : 1, "rope" : 1, "berry_bush" : 1}
+  },
+  {
+    "name" : "winter_hat",
+    "require" : {"beefalo_wool" : 4, "silk" : 4}
+  },
+  {
+    "name" : "dapper_vest",
+    "require" : {"hounds_tooth" : 8, "silk" : 6}
+  },
+  {
+    "name" : "breezy_vest",
+    "require" : {"koalefant_trunk" : 1, "silk" : 8}
+  },
+  {
+    "name" : "puffy_vest",
+    "require" : {"winter_koalefant_trunk" : 1, "silk" : 8, "beefalo_wool" : 2}
+  },
+  {
+    "name" : "walking_cane",
+    "require" : {"gold" : 2, "walrus_tusk" : 1, "twigs" : 4}
+  }
+]
