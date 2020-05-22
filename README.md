@@ -21,12 +21,12 @@
 
 <h3>Future Compatibility</h3>
 <ul>
-  <li>Don't Starve</li>
-  <li>Don't Starve Together</li>
-  <li>Reign of Giants</li>
-  <li>Shipwrecked</li>
-  <li>Return of Us</li>
-  <li>Hamlet</li>
+  <li>Don't Starve :white_check_mark:</li>
+  <li>Don't Starve Together:x:</li>
+  <li>Reign of Giants:x:</li>
+  <li>Shipwrecked:x:</li>
+  <li>Return of Us:x:</li>
+  <li>Hamlet:x:</li>
 </ul>
 
 <p>:point_right: The website is currently not being hosted</p>
