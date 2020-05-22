@@ -1,38 +1,26 @@
 [
   {
     "name" : "axe",
-    "require" : {"twigs" : 1, "flint" : 1},
-    "description" : "Chop down trees!",
-    "category" : "tools"
+    "require" : {"twigs" : 1, "flint" : 1}
   },
   {
     "name" : "pickaxe",
-    "require" : {"twigs" : 2, "flint" : 2},
-    "description" : "Break down rocks.",
-    "category" : "tools"
+    "require" : {"twigs" : 2, "flint" : 2}
   },
   {
     "name" : "shovel",
-    "require" : {"twigs" : 2, "flint" : 2},
-    "description" : "Dig up all sorts of things.",
-    "category" : "tools"
+    "require" : {"twigs" : 2, "flint" : 2}
   },
   {
     "name" : "saddle",
-    "require" : {"beefalo_wool" : 4, "gold" : 4, "pig_skin" : 4},
-    "description" : "Lets you sit on animals. In theory.",
-    "category" : "tools"
+    "require" : {"beefalo_wool" : 4, "gold" : 4, "pig_skin" : 4}
   },
   {
     "name" : "feather_pencil",
-    "require" : {"charcoal" : 1, "jet_feather" : 1, "twigs" : 1},
-    "description" : "Yes, the feather IS necessary.",
-    "category" : "tools"
+    "require" : {"charcoal" : 1, "jet_feather" : 1, "twigs" : 1}
   },
   {
     "name" : "hammer",
-    "require" : {"twigs" : 3, "rocks" : 3, "rope" : 2},
-    "description" : "Smashes all kinds of things.",
-    "category" : "tools"
+    "require" : {"twigs" : 3, "rocks" : 3, "rope" : 2}
   }
 ]

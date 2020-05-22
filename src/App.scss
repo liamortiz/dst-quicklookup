@@ -4,6 +4,21 @@ $li-active-color : white;
 $post-heading-color : #003f5c;
 $post-bg-color: #141414;
 
+@media only screen and (min-width: 1700px) {
+  #left-container {
+    .post-image {
+      float: left;
+      box-shadow: none;
+    }
+    .post-info {
+      margin: 0;
+      box-shadow: 10px 5px 15px #aaa;
+    }
+    .post-heading {
+      margin: 0;
+    }
+  }
+}
 // Animations
 @keyframes slide_down {
   from {
@@ -17,6 +32,44 @@ $post-bg-color: #141414;
   font-family: 'ds-font';
   src : url("./fonts/ds-font.woff");
 }
+.craft-container {
+  background: $navigation-color;
+  height: 40px;
+  min-width: 210px;
+  padding: .5em;
+  margin: .2em 0;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .parent-image {
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-right: 1em;
+  }
+  .require-image {
+    color: white;
+    width: 40px;
+    height: 40px;
+    float: left;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: .3em;
+    span {
+      font-size: 90%;
+      text-shadow: 2px 2px 2px black;
+
+    }
+  }
+}
+
+
 .App {
   background-image: url('./images/goat-background.jpg');
 }
@@ -48,6 +101,7 @@ nav {
   height: 80px;
   background-color: $navigation-color;
   position: fixed;
+  text-align: center;
   top: 0;
   z-index: 1;
   width: 100%;
@@ -88,25 +142,6 @@ nav {
       border-bottom: 5px solid $li-active-color;
       border-radius: 6px;
     }
-  }
-  .search-container {
-    float: right;
-    margin: 1.6em 1em 0 0;
-    display: flex;
-    justify-content: flex-end;
-    .search {
-      color: gray;
-      border-radius: 1px;
-      padding: .7em;
-      outline: none;
-      border: none;
-      &:focus {
-        box-shadow: none;
-      }
-    }
-  }
-  .search-icon {
-    margin-left: .4em;
   }
 }
 /*--------------Dropdown-----------------*/
@@ -265,45 +300,6 @@ nav {
     }
     .tab-container {
       flex: 1;
-    }
-  }
-  .craft-container {
-    background: $navigation-color;
-    height: 40px;
-    min-width: 210px;
-    padding: .5em;
-    margin: .2em 0;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .parent-image {
-      width: 45px;
-      height: 45px;
-      float: left;
-      margin-right: 1em;
-      background-image: url("./images/hud01.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-    .require-image {
-      color: white;
-      width: 40px;
-      height: 40px;
-      float: left;
-      font-weight: bold;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      margin: .3em;
-      span {
-        font-size: 90%;
-        text-shadow: 2px 2px 2px black;
-
-      }
     }
   }
 }
@@ -471,6 +467,39 @@ nav {
           margin-right: .1em;
         }
       }
+    }
+  }
+}
+/*--------------Crafting Page-----------------*/
+#crafting-wrapper {
+  width: 100%;
+  h1 {
+    font-family: 'ds-font', sans-serif;
+    font-size: 260%;
+    text-align: center;
+  }
+  #crafting-category {
+    margin: 2em auto;
+    display: block;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    font-size: 120%;
+    border-color: #ccc;
+  }
+  #crafting-container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 800px;
+    min-height: 800px;
+    .craft-container {
+      max-width: 200px;
+      margin: 0 1em 1em 1em;
+      border: 1px solid black;
+      height: 45px;
     }
   }
 }

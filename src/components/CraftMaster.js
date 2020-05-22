@@ -23,7 +23,7 @@ function loadItems() {
   items = items.map((item, index) => {
     return (
       <CraftPreview key = {index}
-      category =  {item.category}
+      category =  {index < 3 ? "tools" : "fight"}
       name =      {item.name}
       require =   {item.require}
       description ={item.description} />

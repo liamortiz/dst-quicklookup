@@ -5,9 +5,9 @@ import Navigation from './components/Navigation';
 import HomePage from './components/Home';
 import CharacterPage from './components/Characters';
 import RecipePage from './components/Recipe';
+import CraftingPage from './components/Crafting';
 
 import './App.scss';
-import './mobile.scss';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <Route path = "/" exact component = {HomePage}/>
             <Route path = "/characters" exact component = {CharacterPage}/>
             <Route path = "/recipes" exact component = {RecipePage} />
+            <Route path = "/crafting" exact component = {CraftingPage} />
           </Switch>
         </div>
 

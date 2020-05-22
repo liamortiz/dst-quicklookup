@@ -11,7 +11,7 @@ function CraftPreview(props) {
       items.push(
         <div
         key = {name}
-        className = "require-image"
+        className = "require-image hudbackground"
         style = {{backgroundImage : `url(${IMAGES(`./misc/${name}.png`)})`}}>
 
           <span>{`x${amount}`}</span>
@@ -26,7 +26,7 @@ function CraftPreview(props) {
       <img src = {IMAGES(`./${props.category}/${props.name}.png`)}
       alt = {`${props.name}`}
       title = {`${props.name}`}
-      className = "parent-image" />
+      className = "parent-image hud-background" />
 
       {loadItems()}
 

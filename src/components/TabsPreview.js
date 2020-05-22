@@ -8,7 +8,8 @@ const TAB_ITEMS = [
   "science","magic","refine",
   "books","tinkering","treasure_hunting"
 ]
-// Need to replace placeholder hrefs with real ones eventually.
+// TODO: Need to change a tag with Link and add params to the crafting page from here
+
 function TabsPreview(props) {
   return (
     <div id = "tabs-wrapper">

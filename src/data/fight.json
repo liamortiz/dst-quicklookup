@@ -1,32 +1,26 @@
 [
   {
     "name" : "spear",
-    "require" : {"twigs" : 2, "flint" : 1, "rope" : 1},
-    "description" : "Use the pointy end.",
-    "category" : "fight"
+    "require" : {"twigs" : 2, "flint" : 1, "rope" : 1}
   },
   {
     "name" : "ham_bat",
-    "require" : {"pig_skin" : 1, "twigs" : 2, "meat" : 2},
-    "description" : "It takes food to make food.",
-    "category" : "fight"
+    "require" : {"pig_skin" : 1, "twigs" : 2, "meat" : 2}
   },
   {
     "name" : "boomerang",
-    "require" : {"boards" : 1, "silk" : 1, "charcoal" : 1},
-    "description" : "It comes from a land down under.",
-    "category" : "fight"
+    "require" : {"boards" : 1, "silk" : 1, "charcoal" : 1}
   },
   {
     "name" : "tooth_trap",
-    "require" : {"log" : 1, "rope" : 1, "hounds_tooth" : 1},
-    "description" : "Pops up and bites whoever steps on it.",
-    "category" : "fight"
+    "require" : {"log" : 1, "rope" : 1, "hounds_tooth" : 1}
   },
   {
     "name" : "sleep_dart",
-    "require" : {"jet_feather" : 1, "stinger" : 1, "cut_reeds" : 2},
-    "description" : "Spit sleepiness at your enemies.",
-    "category" : "fight"
+    "require" : {"jet_feather" : 1, "stinger" : 1, "cut_reeds" : 2}
+  },
+  {
+    "name" : "morning_star",
+    "require" : {"volt_goat_horn" : 1, "electrical_doodad" : 2, "nitre" : 2}
   }
 ]
