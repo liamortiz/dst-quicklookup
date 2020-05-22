@@ -61,6 +61,69 @@
     "hunger" : 150,
     "sanity" : 200,
     "perks" : ["Is dapper but frail", "Can split his mind into pieces", "On a first-name basis with the night"]
+  },
+  {
+    "name" : "webber",
+    "health" : 175,
+    "hunger" : 175,
+    "sanity" : 100,
+    "perks" : ["Is a monster", "Can befriend spiders", "Grows a silky beard"]
+  },
+  {
+    "name" : "wigfrid",
+    "health" : 200,
+    "hunger" : 120,
+    "sanity" : 120,
+    "perks" : ["Excels in battle", "Gains power from attacking", "Only eats Meat"]
+  },
+  {
+    "name" : "walani",
+    "health" : 120,
+    "hunger" : 200,
+    "sanity" : 200,
+    "perks" : ["Loves surfing", "Dries off quickly", "Is a pretty chill gal"]
+  },
+  {
+    "name" : "warly",
+    "health" : 150,
+    "hunger" : 250,
+    "sanity" : 200,
+    "perks" : ["Has a refined palate", "Cooks in custom", "Kitchenware", "Brings a stylish chef pouch"]
+  },
+  {
+    "name" : "wilbur",
+    "health" : 125,
+    "hunger" : 175,
+    "sanity" : 150,
+    "perks" : ["Can't talk", "Slow as biped, fast as quadruped", "Is a monkey"]
+  },
+  {
+    "name" : "woodlegs",
+    "health" : 150,
+    "hunger" : 150,
+    "sanity" : 120,
+    "perks" : ["Can sniff out treasures", "Captain of the Sea Legs", "Pirate"]
+  },
+  {
+    "name" : "wilba",
+    "health" : 150,
+    "hunger" : 200,
+    "sanity" : 100,
+    "perks" : ["Is royalty", "Carries her father's legacy", "Is afraid of the dark"]
+  },
+  {
+    "name" : "wormwood",
+    "health" : 150,
+    "hunger" : 150,
+    "sanity" : 200,
+    "perks" : ["Plants relate to him", "Has a green thumb", "Food fills his stomach but not his heart"]
+  },
+  {
+    "name" : "wheeler",
+    "health" : 100,
+    "hunger" : 150,
+    "sanity" : 200,
+    "perks" : ["Armed with an air horn", "Has an knack for finding things", "Travels lighter than most"]
   }
 
 ]

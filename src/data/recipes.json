@@ -194,5 +194,88 @@
         ["cactus_flower", "vegetables", "vegetables", "filler"],
         ["cactus_flower", "mushrooms", "mushrooms", "mushrooms"]
       ]
+    },
+    {
+      "name" : "fruit_medley",
+      "recipes" : [
+        ["fruit", "fruit", "fruit", "filler"],
+        ["banana", "banana", "banana", "cooked_jellyfish"]
+      ]
+    },
+    {
+      "name" : "guacamole",
+      "recipes" : [
+        ["moleworm", "ripe_stone_fruit", "filler", "filler"],
+        ["moleworm", "cactus_flesh", "filler", "filler"]
+      ]
+    },
+    {
+      "name" : "gummy_cake",
+      "recipes" : [
+        ["gummy_slug", "sweetener", "filler", "filler"],
+        ["gummy_slug", "honey", "twigs", "twigs"]
+      ]
+    },
+    {
+      "name" : "hard_shell_tacos",
+      "recipes" : [
+        ["weevole_carapace", "weevole_carapace", "vegetables", "filler"],
+        ["weevole_carapace", "weevole_carapace", "mushrooms", "twigs"]
+      ]
+    },
+    {
+      "name" : "ice_cream",
+      "recipes" : [
+        ["ice", "dairy_product", "sweetener", "filler"],
+        ["ice", "dairy_product", "sweetener", "berry"]
+      ]
+    },
+    {
+      "name" : "iced_tea",
+      "recipes" : [
+        ["orange_piko", "orange_piko", "sweetener", "ice"]
+      ]
+    },
+    {
+      "name" : "jellybeans",
+      "recipes" : [
+        ["royal_jelly", "filler", "filler", "filler"],
+        ["royal_jelly", "honey", "honey", "honey"],
+        ["royal_jelly", "ice", "ice", "ice"]
+      ]
+    },
+    {
+      "name" : "jelly-o_pop",
+      "recipes" : [
+        ["jellyfish", "ice", "inedible", "filler"]
+      ]
+    },
+    {
+      "name" : "lobster_bisque",
+      "recipes" : [
+        ["wobster", "ice", "filler", "filler"],
+        ["wobster_(DST)", "ice", "filler", "filler"]
+      ]
+    },
+    {
+      "name" : "lobster_dinner",
+      "recipes" : [
+        ["wobster", "butter", "filler", "filler"],
+        ["wobster_(DST)", "butter", "filler", "filler"]
+      ]
+    },
+    {
+      "name" : "mandrake_soup",
+      "recipes" : [
+        ["mandrake", "filler", "filler", "filler"],
+        ["mandrake", "twigs", "twigs", "twigs"]
+      ]
+    },
+    {
+      "name" : "melonsicle",
+      "recipes" : [
+        ["watermelon", "ice", "twigs", "filler"],
+        ["watermelon", "ice", "twigs", "berry"]
+      ]
     }
 ]

@@ -9,7 +9,6 @@ const TAB_ITEMS = [
   "fight", "structures",
   "magic", "dress"
 ]
-// TODO: Need to change a tag with Link and add params to the crafting page from here
 
 function TabsPreview(props) {
   return (
