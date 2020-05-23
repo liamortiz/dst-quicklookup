@@ -29,5 +29,5 @@
   <li>Hamlet:x:</li>
 </ul>
 
-<p>:point_right: The website is currently not being hosted</p>
+<p>Demo :point_right: https://liamortiz.github.io/dst-quicklookup/</p>
 <img src="https://i.ibb.co/cwPQBtD/Capture.png" alt="" border="0">
