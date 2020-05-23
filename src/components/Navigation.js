@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <nav>
       <div id = "logo">
-        <h1><NavLink to = "/">DSTLookup</NavLink></h1>
+        <h1><NavLink to = "/">DSLookup</NavLink></h1>
       </div>
       <ul>
         <li><NavLink exact = {true} activeClassName = "active" to = "/">Home</NavLink></li>
