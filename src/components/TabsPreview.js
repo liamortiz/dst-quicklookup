@@ -17,7 +17,7 @@ function TabsPreview(props) {
         TAB_ITEMS.map((name, index) => {
           return (
             <div key = {index} className = "tab-container">
-              <Link to = {`/crafting/${name}`}>
+              <Link to = {`crafting/${name}`}>
                 <img src = {IMAGES(`./${name}.png`)} title = {`${name}`} alt = ""/>
               </Link>
             </div>
