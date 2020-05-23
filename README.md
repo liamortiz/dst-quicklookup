@@ -29,5 +29,5 @@
   <li>Hamlet:x:</li>
 </ul>
 
-<p>Demo :point_right: https://liamortiz.github.io/dst-quicklookup/</p>
+<p>Demo :point_right: https://liamortiz.github.io/dst-quicklookup/#/dst-quicklookup/dst-quicklookup/</p>
 <img src="https://i.ibb.co/cwPQBtD/Capture.png" alt="" border="0">
