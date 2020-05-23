@@ -1,0 +1,54 @@
+@media only screen and (min-width: 1700px) {
+  #left-container {
+    .post-image {
+      float: left;
+      box-shadow: none;
+    }
+    .post-info {
+      margin: 0;
+      box-shadow: 10px 5px 15px #aaa;
+    }
+    .post-heading {
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #crafting-container {
+    .craft-container {
+      margin: 1em auto !important;
+    }
+  }
+  #recipe-wrapper {
+    .arrow {display: none !important;}
+  }
+  #right-container {
+    display: none;
+  }
+  #left-container {
+    width: 100%;
+    .post-image {
+      width: 100%;
+    }
+    .release-date {
+      font-size: 50%;
+    }
+  }
+  #wrapper {
+    width: 100%;
+    overflow: hidden;
+    min-width: 0;
+  }
+  nav {
+    min-width: 0;
+    #logo {display: none;}
+    ul {
+      padding: 0;
+      li {
+        margin: 0;
+        margin-left: .5em;
+        margin-right: .5em;
+      }
+    }
+  }
+}

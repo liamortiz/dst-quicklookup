@@ -4,21 +4,6 @@ $li-active-color : white;
 $post-heading-color : #003f5c;
 $post-bg-color: #141414;
 
-@media only screen and (min-width: 1700px) {
-  #left-container {
-    .post-image {
-      float: left;
-      box-shadow: none;
-    }
-    .post-info {
-      margin: 0;
-      box-shadow: 10px 5px 15px #aaa;
-    }
-    .post-heading {
-      margin: 0;
-    }
-  }
-}
 // Animations
 @keyframes slide_down {
   from {

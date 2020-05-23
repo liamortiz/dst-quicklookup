@@ -8,6 +8,7 @@ import RecipePage from './components/Recipe';
 import CraftingPage from './components/Crafting';
 
 import './App.scss';
+import './Mobile.scss';
 
 function App() {
   return (
