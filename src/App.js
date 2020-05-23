@@ -17,7 +17,7 @@ function App() {
 
         <div id = "wrapper">
           <Switch>
-            <Route path = "/" exact component = {HomePage}/>
+            <Route path = {process.env.PUBLIC_URL + '/'} exact component = {HomePage}/>
             <Route path = "/characters" exact component = {CharacterPage}/>
             <Route path = "/recipes" exact component = {RecipePage} />
             <Route path = "/crafting/:filter?" exact component = {CraftingPage} />
