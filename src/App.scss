@@ -268,6 +268,8 @@ nav {
   padding-left: 1em;
   padding-right: 1em;
 
+  .craft-name {display: none;}
+
   h2  {
     color: white;
     background-color: $post-heading-color;
@@ -401,7 +403,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 900px;
+    max-width: 1300px;
     min-height: 800px;
     align-content: flex-start;
     margin: auto;
@@ -472,6 +474,14 @@ nav {
   }
 }
 /*--------------Crafting Page-----------------*/
+.craft-name {
+  float: left;
+  background: $post-heading-color;
+  color: white;
+  padding: .2em;
+  margin: .3em auto;
+  width: 200px;
+}
 #crafting-wrapper {
   width: 100%;
   h1 {
@@ -498,7 +508,7 @@ nav {
     min-height: 800px;
     .craft-container {
       max-width: 200px;
-      margin: 0 1em 1em 1em;
+      margin: 1em 1em 1em 1em;
       border: 1px solid black;
       height: 45px;
     }

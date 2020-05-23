@@ -22,5 +22,37 @@
   {
     "name" : "lantern",
     "require" : {"light_bulb" : 2, "twigs" : 3, "rope" : 2}
+  },
+  {
+    "name" : "endothermic_fire_build",
+    "require" : {"nitre" : 2, "cut_grass" : 3}
+  },
+  {
+    "name" : "endothermic_fire_pit_build",
+    "require" : {"nitre" : 2, "cut_stone" : 4, "electrical_doodad" : 2}
+  },
+  {
+    "name" : "moggles",
+    "require" : {"moleworm" : 2, "electrical_doodad" : 2, "glow_berry" : 1}
+  },
+  {
+    "name" : "chiminea",
+    "require" : {"limestone" : 2, "sand" : 2, "log" : 2}
+  },
+  {
+    "name" : "buoyant_chiminea",
+    "require" : {"sand" : 4, "tar" : 6, "limestone" : 6}
+  },
+  {
+    "name" : "tar_lamp",
+    "require" : {"seashell" : 1, "tar" : 1}
+  },
+  {
+    "name" : "obsidian_fire_pit",
+    "require" : {"log" : 3, "obsidian" : 8}
+  },
+  {
+    "name" : "bottle_lantern",
+    "require" : {"empty_bottle" : 1, "bioluminescence" : 2}
   }
 ]

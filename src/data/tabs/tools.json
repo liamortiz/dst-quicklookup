@@ -8,6 +8,10 @@
     "require" : {"twigs" : 4, "gold" : 2}
   },
   {
+    "name" : "moon_glass_axe",
+    "require" : {"twigs" : 2, "moon_shard" : 3}
+  },
+  {
     "name" : "pickaxe",
     "require" : {"twigs" : 2, "flint" : 2}
   },
@@ -62,5 +66,25 @@
   {
     "name" : "salt_lick",
     "require" : {"boards" : 2, "nitre" : 4}
+  },
+  {
+    "name" : "machete",
+    "require" : {"twigs" : 1, "flint" : 3}
+  },
+  {
+    "name" : "luxury_machete",
+    "require" : {"twigs" : 4, "gold" : 2}
+  },
+  {
+    "name" : "obsidian_machete",
+    "require" : {"machete" : 1, "obsidian" : 3, "dragoon_heart" : 1}
+  },
+  {
+    "name" : "shears",
+    "require" : {"twigs" : 2, "iron_ore" : 2}
+  },
+  {
+    "name" : "pocket_scale",
+    "require" : {"log" : 1, "cut_stone" : 1, "gold" : 1}
   }
 ]

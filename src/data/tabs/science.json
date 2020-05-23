@@ -26,5 +26,13 @@
   {
     "name" : "lightning_rod",
     "require" : {"gold" : 3, "cut_stone" : 1}
+  },
+  {
+    "name" : "ice_flingomatic",
+    "require" : {"gears" : 2, "ice" : 15, "electrical_doodad" : 2}
+  },
+  {
+    "name" : "sea_lab",
+    "require" : {"limestone" : 4, "sand" : 2, "electrical_doodad" : 2}
   }
 ]

@@ -22,15 +22,23 @@ function CraftPreview(props) {
     return items;
   }
   return (
-    <div className = "craft-container">
-      <img src = {IMAGES(`./tabs/${props.category}/${props.name}.png`)}
-      alt = {`${props.name}`}
-      title = {`${props.name}`}
-      className = "parent-image hud-background" />
+      <React.Fragment>
+        <div className = "craft-container">
+          <img src = {IMAGES(`./tabs/${props.category}/${props.name}.png`)}
+          alt = {props.name}
+          title = {props.name}
+          className = "parent-image hud-background" />
 
-      {loadItems()}
+          {loadItems()}
 
-    </div>
+          <div className = "craft-name">
+            {
+              // A complicated way of showing the item names.
+              props.name.split("_").map(word => word.charAt(0).toUpperCase() + word.substr(1)).join(" ")
+            }
+          </div>
+        </div>
+      </React.Fragment>
   );
 }
 export default CraftPreview;

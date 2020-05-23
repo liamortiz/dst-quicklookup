@@ -22,5 +22,18 @@
   {
     "name" : "ice_box",
     "require" : {"boards" : 1, "gears" : 1, "gold" : 2}
+  },
+  {
+    "name" : "bucket-o-poop",
+    "require" : {"manure" : 3, "bone_shards" : 2, "log" : 4}
+  },
+  {
+    "name" : "mussel_stick",
+    "require" : {"bamboo" : 2, "vine" : 1, "seaweed" : 1}
+  },
+  {
+    "name" : "sprinkler_build",
+    "require" : {"alloy" : 2, "blue_gem" : 1, "ice" : 6}
   }
+
 ]
