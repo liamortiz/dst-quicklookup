@@ -1,6 +1,6 @@
 {
   "name": "dst-lookup",
-  "homepage" : "http://liamortiz.github.io/",
+  "homepage" : "http://liamortiz.github.io/dst-quicklookup",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
