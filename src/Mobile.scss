@@ -1,18 +1,3 @@
-@media only screen and (min-width: 1700px) {
-  #left-container {
-    .post-image {
-      float: left;
-      box-shadow: none;
-    }
-    .post-info {
-      margin: 0;
-      box-shadow: 10px 5px 15px #aaa;
-    }
-    .post-heading {
-      margin: 0;
-    }
-  }
-}
 @media screen and (max-width: 600px) {
   #crafting-container {
     .craft-container {
@@ -44,6 +29,7 @@
     #logo {display: none;}
     ul {
       padding: 0;
+      float: none;
       li {
         margin: 0;
         margin-left: .5em;
