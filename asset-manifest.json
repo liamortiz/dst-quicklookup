@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dst-quicklookup/static/css/main.3725fc69.chunk.css",
-    "main.js": "/dst-quicklookup/static/js/main.23e9edeb.chunk.js",
-    "main.js.map": "/dst-quicklookup/static/js/main.23e9edeb.chunk.js.map",
+    "main.css": "/dst-quicklookup/static/css/main.26afb517.chunk.css",
+    "main.js": "/dst-quicklookup/static/js/main.92a44dbf.chunk.js",
+    "main.js.map": "/dst-quicklookup/static/js/main.92a44dbf.chunk.js.map",
     "runtime-main.js": "/dst-quicklookup/static/js/runtime-main.5918feba.js",
     "runtime-main.js.map": "/dst-quicklookup/static/js/runtime-main.5918feba.js.map",
-    "static/js/2.8584efe2.chunk.js": "/dst-quicklookup/static/js/2.8584efe2.chunk.js",
-    "static/js/2.8584efe2.chunk.js.map": "/dst-quicklookup/static/js/2.8584efe2.chunk.js.map",
+    "static/js/2.be78cd6a.chunk.js": "/dst-quicklookup/static/js/2.be78cd6a.chunk.js",
+    "static/js/2.be78cd6a.chunk.js.map": "/dst-quicklookup/static/js/2.be78cd6a.chunk.js.map",
     "index.html": "/dst-quicklookup/index.html",
-    "precache-manifest.51892bab45064f1ded1ec8554f30610f.js": "/dst-quicklookup/precache-manifest.51892bab45064f1ded1ec8554f30610f.js",
+    "precache-manifest.6d90c3540bb49f3ea12ed843ed1d70ab.js": "/dst-quicklookup/precache-manifest.6d90c3540bb49f3ea12ed843ed1d70ab.js",
     "service-worker.js": "/dst-quicklookup/service-worker.js",
-    "static/css/main.3725fc69.chunk.css.map": "/dst-quicklookup/static/css/main.3725fc69.chunk.css.map",
-    "static/js/2.8584efe2.chunk.js.LICENSE.txt": "/dst-quicklookup/static/js/2.8584efe2.chunk.js.LICENSE.txt",
+    "static/css/main.26afb517.chunk.css.map": "/dst-quicklookup/static/css/main.26afb517.chunk.css.map",
+    "static/js/2.be78cd6a.chunk.js.LICENSE.txt": "/dst-quicklookup/static/js/2.be78cd6a.chunk.js.LICENSE.txt",
     "static/media/500px-Shipwrecked_poster.png": "/dst-quicklookup/static/media/500px-Shipwrecked_poster.1444e11f.png",
     "static/media/500px-hamlet.png": "/dst-quicklookup/static/media/500px-hamlet.176a0e20.png",
     "static/media/500px-reign_of_giants.jpg": "/dst-quicklookup/static/media/500px-reign_of_giants.b90e188a.jpg",
@@ -56,8 +56,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5918feba.js",
-    "static/js/2.8584efe2.chunk.js",
-    "static/css/main.3725fc69.chunk.css",
-    "static/js/main.23e9edeb.chunk.js"
+    "static/js/2.be78cd6a.chunk.js",
+    "static/css/main.26afb517.chunk.css",
+    "static/js/main.92a44dbf.chunk.js"
   ]
 }
