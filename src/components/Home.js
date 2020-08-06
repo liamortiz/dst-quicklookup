@@ -19,7 +19,7 @@ function Home() {
         <h2>Popular Items</h2>
         {<CraftMaster />}
         <div id = "tab-section">
-          <h3>Quick Search</h3>
+          <h3>Search By Category</h3>
           <TabsPreview />
         </div>
       </div>

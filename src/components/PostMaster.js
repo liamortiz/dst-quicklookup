@@ -27,7 +27,7 @@ class PostMaster extends React.Component {
   loadUpdates = (index = 0) => {
     return (
     // Load DST updates from updates json file and apply properties
-    updates.slice(index, index + 2)
+    updates.slice(index, index + 1)
       .map((data, index) => {
         return (<Post key = {index}
         title =       {data.title}
@@ -48,7 +48,9 @@ class PostMaster extends React.Component {
         <div className = "post-nav">
           <ul>
             <li id = "post-active" onClick = {(e) => this.handleClick(0, e)}>1</li>
-            <li onClick = {(e) => this.handleClick(2, e)}>2</li>
+            <li onClick = {(e) => this.handleClick(1, e)}>2</li>
+            <li onClick = {(e) => this.handleClick(2, e)}>3</li>
+            <li onClick = {(e) => this.handleClick(3, e)}>4</li>
           </ul>
         </div>
       </React.Fragment>

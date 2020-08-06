@@ -1,7 +1,7 @@
 /* Navigation colors/variables */
-$navigation-color : #F58220;
-$li-active-color : white;
-$post-heading-color : #003f5c;
+$navigation-color : #161616;
+$li-active-color : rgb(224, 183, 0);
+$post-heading-color : #129658;
 $post-bg-color: #141414;
 
 // Animations
@@ -18,11 +18,11 @@ $post-bg-color: #141414;
   src : url("./fonts/ds-font.woff");
 }
 .craft-container {
-  background: $navigation-color;
-  height: 40px;
-  min-width: 210px;
+  background: $post-heading-color;
+  height: 45px;
+  width: 210px;
   padding: .5em;
-  margin: .2em 0;
+  margin: .2em auto;
   &:first-child {
     margin-top: 0;
   }
@@ -71,7 +71,7 @@ $post-bg-color: #141414;
   flex-direction: row;
 }
 #left-container {
-  flex: 2.5;
+  flex: 2;
   h1 {
     margin: 1em auto;
     font-size: 240%;
@@ -94,32 +94,33 @@ nav {
   a {
     text-decoration: none;
     font-family: 'ds-font';
-    font-size: 150%;
+    font-size: 180%;
     color: white;
+    transition: color .2s ease-in-out;
     &:hover:not(.active) {
-      color: black;
+      color: $li-active-color;
     }
   }
   #logo {
     width: 120px;
     height: 100%;
-    display: inline-block;
     float: left;
     margin-left: 1em;
-    a:hover{color: white;}
+    margin-left: 3em;
+    &:hover {
+      opacity: 0.9;
+    }
   }
   ul {
     margin: 0;
     margin-left: 2em;
     margin-top: 1.8em;
-    display: inline-block;
     font-size: 110%;
-    font-family: 'Helvetica';
     float: left;
     li {
       float: left;
       list-style: none;
-      margin: -.4em 2em 0 2em;
+      margin: -.4em 1.5em 0 1.5em;
       img {
         margin-left: .3em;
         transition: .2s transform;
@@ -165,9 +166,9 @@ nav {
 }
 /*--------------Post-----------------*/
 .post-nav {
-  margin: 3em 0 8em;
+  margin: 0 0 8em;
   #post-active {
-    background-color: $navigation-color;
+    background-color: $li-active-color;
   }
   ul {
     max-width: 100px;
@@ -191,12 +192,13 @@ nav {
   max-width: 1200px;
   padding: 0 1em 0 1em;
   margin: auto;
+  padding-bottom: 2em;
   .post-heading {
     padding: .4em;
     margin: 0 auto;
     max-width: 450px;
     text-align: left;
-    background-color: $post-heading-color;
+    background-color: $li-active-color;
     color: white;
     font-size: 200%;
     font-family: 'ds-font', sans-serif;
@@ -217,7 +219,7 @@ nav {
     box-shadow: 5px 5px 5px #aaa;
   }
   .post-info {
-    max-width: 600px;
+    max-width: 500px;
     min-height: 280px;
     line-height: 1.8em;
     font-family: 'Helvetica';
@@ -228,7 +230,6 @@ nav {
     margin-bottom: 4em;
     background-color: $post-heading-color;
     color: white;
-    border: 1px solid black;
     display: flex;
 
     h3 {text-align: center;}
@@ -263,7 +264,6 @@ nav {
     text-align: center;
     padding: .4em;
     border-radius: 5px;
-    border: 1px dashed white;
     font-family: 'ds-font', sans-serif;
     font-size: 200%;
   }
@@ -279,13 +279,15 @@ nav {
     margin-top: 4em;
   }
   #tab-section {
-    margin-top: 7em;
+    margin-top: 5em;
     height: 250px;
     max-width: 200px;
 
     #tabs-wrapper {
       display: flex;
       flex-wrap: wrap;
+      border: 1px solid rgba(255, 255, 255, 0.144);
+      padding: 1em;
     }
     .tab-container {
       flex: 1;
@@ -327,7 +329,7 @@ nav {
       padding: .4em 0 .4em 0;
       margin: auto;
       justify-content: center;
-      background-color: $navigation-color;
+      background-color: $post-heading-color;
       border: 1px solid #eee;
       span {
         width: 60px;
@@ -353,8 +355,7 @@ nav {
       padding: 1em 0 1em 0;
       margin: 0 0 2em 0;
       color: white;
-      background-color: $post-heading-color;
-      border-radius: 5px;
+      background-color: $navigation-color;
       height: 100%;
       ul {margin: 0;}
       li {
@@ -386,10 +387,11 @@ nav {
 #recipe-wrapper {
   width: 100%;
   #recipe-container {
+    width: 85%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: 1300px;
     min-height: 800px;
     align-content: flex-start;
@@ -424,17 +426,19 @@ nav {
         float: right;
       }
       .dropdown {
-        background-color: $navigation-color;
+        background-color: $post-heading-color;
         background-image: url("./images/arrowdown.png");
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;
-        width: 15px;
-        height: 10px;
+        width: 4rem;
+        height: 1.5rem;
         margin: auto;
-        padding: .4em;
-        border-radius: 5px;
+        border-radius: 2px;
         transition: transform .2s;
+        &:hover {
+          background-color: lighten($post-heading-color, 10%);
+        }
         img {
           display: block;
           width: 20px;
@@ -463,11 +467,15 @@ nav {
 /*--------------Crafting Page-----------------*/
 .craft-name {
   float: left;
-  background: $post-heading-color;
+  background: $li-active-color;
   color: white;
-  padding: .2em;
-  margin: .3em auto;
-  width: 200px;
+  margin: .2em auto;
+  width: 100%;
+  text-align: left;
+  text-indent: 1rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 0; top: -20px;
 }
 #crafting-wrapper {
   width: 100%;
@@ -494,9 +502,9 @@ nav {
     max-width: 800px;
     min-height: 800px;
     .craft-container {
-      max-width: 200px;
+      position: relative;
+      max-width: 210px;
       margin: 1em 1em 1em 1em;
-      border: 1px solid black;
       height: 45px;
     }
   }
@@ -510,6 +518,7 @@ footer {
   position: relative;
   margin-top: 4em;
   img {
+    width: 3rem;
     vertical-align: middle;
   }
   p {
