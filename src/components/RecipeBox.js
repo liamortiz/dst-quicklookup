@@ -13,10 +13,8 @@ function getImage(item_name, index) {
     </li>
   )
 }
-// Loops through recipe nested array and returns the recipe in sets.
-function getRecipes(data, all=false) {
-  // data -> [[4], [4], [4], [4]]
-  if (all) {
+function getRecipes(data, showAll=false) {
+  if (showAll) {
     return (
       data.map((set, index) => {
         return (
@@ -34,22 +32,17 @@ function getRecipes(data, all=false) {
     </ul>)
 }
 class RecipeBox extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expanded : false,
-      recipes : getRecipes(this.props.recipes)}
+  state = {
+    expanded : false,
+    recipes : getRecipes(this.props.recipes)
   }
   getDropDown = () => {
     return (this.props.recipes.length !== 1 ? <div className = "dropdown" onClick = {this.handleClick}></div> : "")
   }
   handleClick = (event) => {
-    // Doing this helps to lower http requests for the images, I tried hiding them with display
-    // But the requests were still being sent.
     let recipes = getRecipes(this.props.recipes, !this.state.expanded);
     this.setState({expanded : !this.state.expanded, recipes : recipes})
 
-    // Arrow animation
     let transform = (this.state.expanded) ? "" : "rotate(180deg)";
     event.target.style.transform = transform;
   }

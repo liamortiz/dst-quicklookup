@@ -1,19 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import RecipeBox from './RecipeBox';
 import Footer from './Footer';
 
 import recipes_data from '../data/recipes.json';
 
 class Recipe extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      input_value : "Filter by Name",
-      recipes : recipes_data.slice(0, 12),
-      page_index : 1
-    };
-  }
-  // Switches between pages depending on the index and recipe length
+  state = {
+    input_value : "Filter by Name",
+    recipes : recipes_data.slice(0, 12),
+    page_index : 1
+  };
+
   getRecipes(current_index=this.state.page_index) {
     let num_recipes = recipes_data.length;
     let max_index = 12 * current_index;
@@ -27,18 +24,15 @@ class Recipe extends Component {
     return  recipes_data.slice(min_index, max_index)
   }
   handleInput = (event) => {
-    // Get user input and replace space with _
     let user_input = event.target.value;
     user_input = user_input.toLowerCase().replace(" ", "_");
 
-    // If user leaves input blank show all else filter
     let filtered_recipes = (user_input === "") ? this.getRecipes() : []
 
-    // The user is searching for something filter by name
     if (filtered_recipes.length === 0) {
       filtered_recipes = recipes_data.filter(data => data.name.includes(user_input))
     }
-    // Update the recipes being shown
+    
     this.setState({
       input_value : user_input,
       recipes : filtered_recipes
@@ -61,7 +55,6 @@ class Recipe extends Component {
     })
   }
   getPages() {
-    // Calculates the needed number of pages
     let list = [<li key = {0} id = "post-active" onClick = {(e) => this.handleClick(e, 1)}>{1}</li>];
     for(let i = 1; i < Math.ceil(recipes_data.length  / 12); i++) {
       list.push(<li key = {i} onClick = {(e) => this.handleClick(e, i+1)}>{i+1}</li>)
